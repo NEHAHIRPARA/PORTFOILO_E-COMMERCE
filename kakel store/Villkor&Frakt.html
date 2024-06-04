@@ -1,0 +1,1102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Villkor_Frakt</title>
+
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="Assest/CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="Assest/CSS/style.css">
+    <link rel="stylesheet" href="Assest/CSS/responsive.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Icon Links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+
+
+
+
+
+</head>
+
+<body>
+    <!-- header section -->
+    <header class="header">
+        <div class="conatiner">
+            <div class="row d-flex align-item-center justify-content-center header_part1">
+                <div class="col-8 header_part1_info d-flex align-items-center">
+                    <h5>SNABBA LEVERANSER</h5>
+                    <h5>Hög kvalité</h5>
+                    <h5>Miljötänk</h5>
+                </div>
+                <div class="col-2 d-flex justify-content-center align-items-center">
+                    <img src="Assest/Image/header/Google.png" alt="img">
+                </div>
+            </div>
+            <div class="row header_part2">
+                <div class="col-3 logo d-flex align-items-center justify-content-center"
+                    onclick="window.location.href='HOME_PAGE.html'">
+                    <img src="Assest/Image/header/Logo.png" alt="">
+                </div>
+                <div class="col-8 serch_icon">
+                    <div class="header_middle d-flex align-items-center justify-content-between">
+                        <div class="searchbar d-flex align-items-center">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input type="search" placeholder="Vad söker du?">
+                        </div>
+
+                        <div class="iocn_list d-flex justify-content-around align-items-center">
+                            <i class="fa-solid fa-clock-rotate-left"
+                                onclick="window.location.href = 'nyligensettprodukt.html'"></i>
+                            <i class="fa-regular fa-heart" onclick="window.location.href = 'favoriteproduct.html'"></i>
+                            <i class="fa-regular fa-user" onclick="window.location.href = 'Account.html'"></i>
+                            <i>
+                                <div onclick="togglecart()">
+                                    <i class="fa-solid fa-cart-shopping" style="border: none;">
+                                    </i>
+                                    <nav class="cart" id="open">
+                                        <div class="menu2" onclick="event.stopPropagation();">
+                                            <div class="cart_1 d-flex align-items-center">
+                                                <button class="cartbtn" onclick="closecart()"><i
+                                                        class="fa-solid fa-xmark" style="border: none;"></i></button>
+                                                <p class="p-0 m-0">varukorg</p>
+                                            </div>
+                                            <ul class="d-flex justify-content-center align-items-center"
+                                                style="height: 100%;">
+                                                <li><img src="Assest/Image/header/kakel-klinker/cart.svg" alt=""></li>
+                                                <div class="carttext">du har inga produkter i din kundvagn</div>
+                                                <div class="cart_btn d-flex justify-content-center">
+                                                    <button>Fortsätt handla</button>
+                                                </div>
+                                            </ul>
+                                        </div>
+                                    </nav>
+                                </div>
+                            </i>
+                        </div>
+                    </div>
+                    <div class="header_btngrp d-flex align-items-center justify-content-between">
+                        <div class="header_btn1" id="hbtn1">
+                            <button type="button"
+                                class="btn dropdown-toggle button1 d-flex align-items-center justify-content-center  text-center"
+                                id="dropdownToggle1" data-toggle="dropdown">
+                                <p class="p-0 m-0">kakel & klinker</p>
+                                <span class="icon">
+                                    <i class=" fa-solid fa-chevron-down">
+                                    </i>
+                                </span>
+                            </button>
+
+                            <!-- Dropdown options -->
+
+                            <div class="dropdown-menu" id="dropdown1" onclick="event.stopPropagation()">
+                                <div class="kakel_list">
+                                    <div class="kakel_left_part" id="kakel_left">
+                                        <button id="textil" class="dropdown-button"><img
+                                                src="Assest/Image/header/kakel-klinker/textile.svg" alt="img">
+                                            <p>textil</p>
+                                        </button>
+                                        <button><img src="Assest/Image/header/kakel-klinker/Mönstrat.svg" alt="img">
+                                            <p>Mönstrat</p>
+                                        </button>
+                                        <button><img src="Assest/Image/header/kakel-klinker/betong.svg" alt="img">
+                                            <p>betong</p>
+                                        </button>
+                                        <button id="hexagon" class="dropdown-button"><img
+                                                src="Assest/Image/header/kakel-klinker/hexagon.svg" alt="img">
+                                            <p>hexagon</p>
+                                        </button>
+                                        <button><img src="Assest/Image/header/kakel-klinker/metall.png" alt="img">
+                                            <p>metall</p>
+                                        </button>
+                                        <button><img src="Assest/Image/header/kakel-klinker/sten.svg" alt="img">
+                                            <p>sten</p>
+                                        </button>
+                                        <button><img src="Assest/Image/header/kakel-klinker/mosaik.svg" alt="img">
+                                            <p>mosaik</p>
+                                        </button>
+                                        <button id="marmor" class="dropdown-button"><img
+                                                src="Assest/Image/header/kakel-klinker/marmor.svg" alt="img">
+                                            <p>marmor</p>
+                                        </button>
+                                        <button><img src="Assest/Image/header/kakel-klinker/lister.svg" alt="img">
+                                            <p>lister</p>
+                                        </button>
+                                        <button><img src="Assest/Image/header/kakel-klinker/Trä.png" alt="img">
+                                            <p>Trä</p>
+                                        </button>
+                                        <button><img src="Assest/Image/header/kakel-klinker/enfärgat.svg" alt="img">
+                                            <p>enfärgat</p>
+                                        </button>
+                                        <button><img src="Assest/Image/header/kakel-klinker/metro.svg" alt="img">
+                                            <p>metro</p>
+                                        </button>
+                                        <button><img src="Assest/Image/header/kakel-klinker/lera.svg" alt="img">
+                                            <p>lera</p>
+                                        </button>
+                                        <button><img src="Assest/Image/header/kakel-klinker/decor.svg" alt="img">
+                                            <p>decor</p>
+                                        </button>
+                                        <button><img src="Assest/Image/header/kakel-klinker/storstorlek.svg" alt="img">
+                                            <p>stor storlek</p>
+                                        </button>
+                                    </div>
+                                    <div class="kakel_right_list toggle" id="textil" style="display: block;">
+                                        <div class="kakel_right_part ">
+                                            <h3 class="text-center">TEXTILE</h3>
+                                            <div class="kakel_right d-flex justify-content-between">
+                                                <div class="kakel_right_part1">
+                                                    <div class="imggrp">
+                                                        <img src="Assest/Image/header/kakel-klinker/textil_bg.svg"
+                                                            alt="img">
+                                                        <div class="round d-flex text-center justify-content-center">
+                                                            <p class="p-0 m-0">-15% </p><span>Discount</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="img_text">Italienska Badrumsmöbelset Baden Haus
+                                                        Bellagio Stengrå (3 Delar)
+                                                    </div>
+                                                    <div class="price">
+                                                        <h6>13000.00 kr</h6>
+                                                        <h4>11999.00 kr</h4>
+                                                    </div>
+                                                    <div
+                                                        class="bottompart d-flex justify-content-between align-items-center">
+                                                        <div class="roundgrp d-flex align-items-center">
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround">+18</div>
+                                                        </div>
+                                                        <button class="whishlistbtn"><i class="fa-regular fa-heart"
+                                                                id="heart1"></i></button>
+                                                    </div>
+                                                </div>
+                                                <div class="kakel_right_part2">
+                                                    <div class="imggrp">
+                                                        <img src="Assest/Image/header/kakel-klinker/textilebg2.svg"
+                                                            alt="img">
+                                                        <div class="round d-flex text-center justify-content-center">
+                                                            <p class="p-0 m-0">-15% </p><span>Discount</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="img_text">Italienska Badrumsmöbelset Baden Haus
+                                                        Bellagio Stengrå (3 Delar)
+                                                    </div>
+                                                    <div class="price">
+                                                        <h6>13000.00 kr</h6>
+                                                        <h4>11999.00 kr</h4>
+                                                    </div>
+                                                    <div
+                                                        class="bottompart d-flex justify-content-between align-items-center">
+                                                        <div class="roundgrp d-flex align-items-center">
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround">+18</div>
+                                                        </div>
+                                                        <button class="whishlistbtn"><i class="fa-regular fa-heart"
+                                                                id="heart2"></i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button class="btn kakel_right_btn">Utforska vår
+                                                shop</button>
+                                        </div>
+                                    </div>
+                                    <div class="kakel_right_list toggle" id="hexagon" style="display: none;">
+                                        <div class="kakel_right_part ">
+                                            <h3 class="text-center">HEXAGON</h3>
+                                            <div class="kakel_right d-flex justify-content-between">
+                                                <div class="kakel_right_part1">
+                                                    <div class="imggrp">
+                                                        <img src="Assest/Image/header/kakel-klinker/Hexagonbg1.svg"
+                                                            alt="img">
+                                                        <div class="round d-flex text-center justify-content-center">
+                                                            <p class="p-0 m-0">-15% </p><span>Discount</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="img_text">Italienska Badrumsmöbelset Baden Haus
+                                                        Bellagio Stengrå (3 Delar)
+                                                    </div>
+                                                    <div class="price">
+                                                        <h6>13000.00 kr</h6>
+                                                        <h4>11999.00 kr</h4>
+                                                    </div>
+                                                    <div
+                                                        class="bottompart d-flex justify-content-between align-items-center">
+                                                        <div class="roundgrp d-flex align-items-center">
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround">+18</div>
+                                                        </div>
+                                                        <button class="whishlistbtn"><i class="fa-regular fa-heart"
+                                                                id="heart3"></i></button>
+                                                    </div>
+                                                </div>
+                                                <div class="kakel_right_part2">
+                                                    <div class="imggrp">
+                                                        <img src="Assest/Image/header/kakel-klinker/Hexagonbg2.svg"
+                                                            alt="img">
+                                                        <div class="round d-flex text-center justify-content-center">
+                                                            <p class="p-0 m-0">-15% </p><span>Discount</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="img_text">Italienska Badrumsmöbelset Baden Haus
+                                                        Bellagio Stengrå (3 Delar)
+                                                    </div>
+                                                    <div class="price">
+                                                        <h6>13000.00 kr</h6>
+                                                        <h4>11999.00 kr</h4>
+                                                    </div>
+                                                    <div
+                                                        class="bottompart d-flex justify-content-between align-items-center">
+                                                        <div class="roundgrp d-flex align-items-center">
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround">+18</div>
+                                                        </div>
+                                                        <button class="whishlistbtn"><i class="fa-regular fa-heart"
+                                                                id="heart4"></i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a href="#" style="display: flex;"><button
+                                                    class="btn kakel_right_btn">Utforska vår
+                                                    shop</button></a>
+                                        </div>
+                                    </div>
+                                    <div class="kakel_right_list toggle" id="marmor" style="display: none;">
+                                        <div class="kakel_right_part ">
+                                            <h3 class="text-center">MARMOR</h3>
+                                            <div class="kakel_right d-flex justify-content-between">
+                                                <div class="kakel_right_part1">
+                                                    <div class="imggrp">
+                                                        <img src="Assest/Image/header/kakel-klinker/marmorbg1.svg"
+                                                            alt="img">
+                                                        <div class="round d-flex text-center justify-content-center">
+                                                            <p class="p-0 m-0">-15% </p><span>Discount</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="img_text">Italienska Badrumsmöbelset Baden Haus
+                                                        Bellagio Stengrå (3 Delar)
+                                                    </div>
+                                                    <div class="price">
+                                                        <h6>13000.00 kr</h6>
+                                                        <h4>11999.00 kr</h4>
+                                                    </div>
+                                                    <div
+                                                        class="bottompart d-flex justify-content-between align-items-center">
+                                                        <div class="roundgrp d-flex align-items-center">
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround">+18</div>
+                                                        </div>
+                                                        <button class="whishlistbtn"><i class="fa-regular fa-heart"
+                                                                id="heart5"></i></button>
+                                                    </div>
+                                                </div>
+                                                <div class="kakel_right_part2">
+                                                    <div class="imggrp">
+                                                        <img src="Assest/Image/header/kakel-klinker/marmorbg2.svg"
+                                                            alt="img">
+                                                        <div class="round d-flex text-center justify-content-center">
+                                                            <p class="p-0 m-0">-15% </p><span>Discount</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="img_text">Italienska Badrumsmöbelset Baden Haus
+                                                        Bellagio Stengrå (3 Delar)
+                                                    </div>
+                                                    <div class="price">
+                                                        <h6>13000.00 kr</h6>
+                                                        <h4>11999.00 kr</h4>
+                                                    </div>
+                                                    <div
+                                                        class="bottompart d-flex justify-content-between align-items-center">
+                                                        <div class="roundgrp d-flex align-items-center">
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround">+18</div>
+                                                        </div>
+                                                        <button class="whishlistbtn"><i class="fa-regular fa-heart"
+                                                                id="heart6"></i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a href="#" style="display: flex;"><button
+                                                    class="btn kakel_right_btn">Utforska vår
+                                                    shop</button></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header_btn2" id="hbtn1">
+                            <button type="button"
+                                class="btn btn-success dropdown-toggle button1 d-flex align-items-center justify-content-center"
+                                id="dropdownToggle2" data-toggle="dropdown">
+                                <p class="p-0 m-0">badrum</p>
+                                <span class="icon">
+                                    <i class=" fa-solid fa-chevron-down"></i>
+                                </span>
+                            </button>
+
+                            <!-- Dropdown options -->
+                            <div class="dropdown-menu" id="dropdown1" onclick="event.stopPropagation()">
+                                <div class="kakel_list">
+                                    <div class="kakel_left_part badrum_left" id="kakel_left">
+                                        <button id="textil" class="dropdown-button boxsh badrum"><img
+                                                src="Assest/Image/header/kakel-klinker/badrum1.svg" alt="img">
+                                            <p>badrumsmöbler</p>
+                                        </button>
+                                        <button id="hexagon" class="dropdown-button boxsh badrum"><img
+                                                src="Assest/Image/header/kakel-klinker/badrum2.svg" alt="img">
+                                            <p>tvättställ</p>
+                                        </button>
+
+                                        <button id="marmor" class="dropdown-button boxsh badrum"><img
+                                                src="Assest/Image/header/kakel-klinker/badrum3.svg" alt="img">
+                                            <p>speglar</p>
+                                        </button>
+                                        <button class="boxsh badrum"><img
+                                                src="Assest/Image/header/kakel-klinker/badrum4.svg" alt="img">
+                                            <p>tvättställsskåp</p>
+                                        </button>
+                                        <button class="boxsh badrum"><img
+                                                src="Assest/Image/header/kakel-klinker/badrum6.svg" alt="img">
+                                            <p>marmor</p>
+                                        </button>
+                                    </div>
+                                    <div class="kakel_right_list toggle" id="textil" style="display: block;">
+                                        <div class="kakel_right_part ">
+                                            <h3 class="text-center" style="text-transform: capitalize;">badrumsmöbler
+                                            </h3>
+                                            <div class="kakel_right d-flex justify-content-between">
+                                                <div class="kakel_right_part1">
+                                                    <div class="imggrp">
+                                                        <img src="Assest/Image/header/kakel-klinker/badrumsmöbler1.svg"
+                                                            alt="img">
+                                                        <div class="round d-flex text-center justify-content-center">
+                                                            <p class="p-0 m-0">-15% </p><span>Discount</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="img_text" style="text-transform: capitalize;">Italienska
+                                                        Badrumsmöbelset Baden Haus Bellagio Stengrå (3 Delar)
+                                                    </div>
+                                                    <div class="price">
+                                                        <h6>13000.00 kr</h6>
+                                                        <h4>11999.00 kr</h4>
+                                                    </div>
+                                                    <div
+                                                        class="bottompart d-flex justify-content-between align-items-center">
+                                                        <div class="roundgrp d-flex align-items-center">
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround">+18</div>
+                                                        </div>
+                                                        <button class="whishlistbtn"><i class="fa-regular fa-heart"
+                                                                id="heart1"></i></button>
+                                                    </div>
+                                                </div>
+                                                <div class="kakel_right_part2">
+                                                    <div class="imggrp">
+                                                        <img src="Assest/Image/header/kakel-klinker/badrumsmöbler2.svg"
+                                                            alt="img">
+                                                        <div class="round d-flex text-center justify-content-center">
+                                                            <p class="p-0 m-0">-15% </p><span>Discount</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="img_text" style="text-transform: capitalize;">Italienska
+                                                        Badrumsmöbelset Baden Haus Bellagio Stengrå (3 Delar)
+
+                                                    </div>
+                                                    <div class="price">
+                                                        <h6>13000.00 kr</h6>
+                                                        <h4>11999.00 kr</h4>
+                                                    </div>
+                                                    <div
+                                                        class="bottompart d-flex justify-content-between align-items-center">
+                                                        <div class="roundgrp d-flex align-items-center">
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround">+18</div>
+                                                        </div>
+                                                        <button class="whishlistbtn"><i class="fa-regular fa-heart"
+                                                                id="heart2"></i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button class="btn kakel_right_btn">Utforska vår
+                                                shop</button>
+                                        </div>
+                                    </div>
+                                    <div class="kakel_right_list toggle" id="hexagon" style="display: none;">
+                                        <div class="kakel_right_part ">
+                                            <h3 class="text-center" style="text-transform: capitalize;">speglar</h3>
+                                            <div class="kakel_right d-flex justify-content-between">
+                                                <div class="kakel_right_part1">
+                                                    <div class="imggrp">
+                                                        <img src="Assest/Image/header/kakel-klinker/speglar1.svg"
+                                                            alt="img">
+                                                        <div class="round d-flex text-center justify-content-center">
+                                                            <p class="p-0 m-0">-15% </p><span>Discount</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="img_text" style="text-transform: capitalize;">Italienska
+                                                        Badrumsmöbelset Baden Haus
+                                                        Bellagio Stengrå (3 Delar)
+                                                    </div>
+                                                    <div class="price">
+                                                        <h6>13000.00 kr</h6>
+                                                        <h4>11999.00 kr</h4>
+                                                    </div>
+                                                    <div
+                                                        class="bottompart d-flex justify-content-between align-items-center">
+                                                        <div class="roundgrp d-flex align-items-center">
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround">+18</div>
+                                                        </div>
+                                                        <button class="whishlistbtn"><i class="fa-regular fa-heart"
+                                                                id="heart3"></i></button>
+                                                    </div>
+                                                </div>
+                                                <div class="kakel_right_part2">
+                                                    <div class="imggrp">
+                                                        <img src="Assest/Image/header/kakel-klinker/speglar2.svg"
+                                                            alt="img">
+                                                        <div class="round d-flex text-center justify-content-center">
+                                                            <p class="p-0 m-0">-15% </p><span>Discount</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="img_text" style="text-transform: capitalize;">Italienska
+                                                        Badrumsmöbelset Baden Haus
+                                                        Bellagio Stengrå (3 Delar)
+                                                    </div>
+                                                    <div class="price">
+                                                        <h6>13000.00 kr</h6>
+                                                        <h4>11999.00 kr</h4>
+                                                    </div>
+                                                    <div
+                                                        class="bottompart d-flex justify-content-between align-items-center">
+                                                        <div class="roundgrp d-flex align-items-center">
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround">+18</div>
+                                                        </div>
+                                                        <button class="whishlistbtn"><i class="fa-regular fa-heart"
+                                                                id="heart4"></i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a href="#" style="display: flex;"><button
+                                                    class="btn kakel_right_btn">Utforska vår
+                                                    shop</button></a>
+                                        </div>
+                                    </div>
+                                    <div class="kakel_right_list toggle" id="marmor" style="display: none;">
+                                        <div class="kakel_right_part ">
+                                            <h3 class="text-center" style="text-transform: capitalize;">tvättställ</h3>
+                                            <div class="kakel_right d-flex justify-content-between">
+                                                <div class="kakel_right_part1">
+                                                    <div class="imggrp">
+                                                        <img src="Assest/Image/header/kakel-klinker/tvättställ1.svg"
+                                                            alt="img">
+                                                        <div class="round d-flex text-center justify-content-center">
+                                                            <p class="p-0 m-0">-15% </p><span>Discount</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="img_text" style="text-transform: capitalize;">Italienska
+                                                        Badrumsmöbelset Baden Haus
+                                                        Bellagio Stengrå (3 Delar)
+                                                    </div>
+                                                    <div class="price">
+                                                        <h6>13000.00 kr</h6>
+                                                        <h4>11999.00 kr</h4>
+                                                    </div>
+                                                    <div
+                                                        class="bottompart d-flex justify-content-between align-items-center">
+                                                        <div class="roundgrp d-flex align-items-center">
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround">+18</div>
+                                                        </div>
+                                                        <button class="whishlistbtn"><i class="fa-regular fa-heart"
+                                                                id="heart5"></i></button>
+                                                    </div>
+                                                </div>
+                                                <div class="kakel_right_part2">
+                                                    <div class="imggrp">
+                                                        <img src="Assest/Image/header/kakel-klinker/tvättställ2.svg"
+                                                            alt="img">
+                                                        <div class="round d-flex text-center justify-content-center">
+                                                            <p class="p-0 m-0">-15% </p><span>Discount</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="img_text" style="text-transform: capitalize;">Italienska
+                                                        Badrumsmöbelset Baden Haus
+                                                        Bellagio Stengrå (3 Delar)
+                                                    </div>
+                                                    <div class="price">
+                                                        <h6>13000.00 kr</h6>
+                                                        <h4>11999.00 kr</h4>
+                                                    </div>
+                                                    <div
+                                                        class="bottompart d-flex justify-content-between align-items-center">
+                                                        <div class="roundgrp d-flex align-items-center">
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround">+18</div>
+                                                        </div>
+                                                        <button class="whishlistbtn"><i class="fa-regular fa-heart"
+                                                                id="heart6"></i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a href="#" style="display: flex;"><button
+                                                    class="btn kakel_right_btn">Utforska vår
+                                                    shop</button></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header_btn3">
+                            <button type="button"
+                                class="btn dropdown-toggle button1 d-flex align-items-center justify-content-center text-center"
+                                id="dropdownToggle" data-toggle="dropdown">
+                                <p class="p-0 m-0">art deco / exclusive</p>
+                            </button>
+                        </div>
+                        <div class="header_btn4">
+                            <button type="button"
+                                class="btn btn-success dropdown-toggle button1 d-flex align-items-center justify-content-center text-center"
+                                id="dropdownToggle" data-toggle="dropdown"
+                                onclick="window.location.href = 'utomhus.html'">
+                                <p class="p-0 m-0">utomnus</p>
+                            </button>
+                        </div>
+                        <div class="header_btn5">
+                            <button type="button"
+                                class="btn btn-success dropdown-toggle button1 d-flex align-items-center justify-content-center text-center"
+                                id="dropdownToggle" data-toggle="dropdown">
+                                <p class="p-0 m-0">stor storlek</p>
+                            </button>
+                        </div>
+                        <div class="header_btn6">
+                            <button type="button"
+                                class="btn btn-success dropdown-toggle button1 d-flex align-items-center justify-content-center text-center"
+                                id="dropdownToggle" data-toggle="dropdown"
+                                onclick="window.location.href = 'inspiration.html';">
+                                <p class="p-0 m-0">inspiration</p>
+
+                            </button>
+
+
+                        </div>
+                        <div class="header_btn7" onclick="toggleMenu()">
+                            <a href="#"><i class="fa-solid fa-bars"></i>
+                                <span>MENU</span></a>
+
+                            <nav class="menu" id="close">
+                                <div class="menu2" onclick="event.stopPropagation();">
+                                    <div class="menupart_1 align-items-center">
+                                        <button class="cartbtn" onclick="closemenu();"><i
+                                                class="fa-solid fa-xmark"></i></button>
+                                        <p class="p-0 m-0">MENU</p>
+                                    </div>
+                                    <ul class="d-flex justify-content-center align-items-center">
+                                        <li><a href="Försändelsespårning.html">försändelse spårning</a></li>
+                                        <li><a href="kontaktaoss.html">kontakta oss</a></li>
+                                        <li><a href="VanligaFrågor1.html">vanliga frågor</a></li>
+                                        <li><a href="Villkor&Frakt.html">villkor & frakt</a></li>
+                                        <li><a href="om_oss.html">om oss</a></li>
+                                        <li><a href="integritetspolicy.html">integritetspolicy</a></li>
+                                    </ul>
+                                    <div class="socialapp_icon d-flex justify-content-center">
+                                        <a href="#"><img src="Assest/Image/header/facebook.svg" alt=""></a>
+                                        <a href="#"><img src="Assest/Image/header/Insta.svg" alt=""></a>
+                                        <a href="#"><img src="Assest/Image/header/pint.svg" alt=""></a>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-1 header_right d-flex align-items-end justify-content-center">
+                    <a href="#">
+                        <p>click to minimize</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--Villkor & Frakt section -->
+    <div class="Villkor_Frakt">
+        <div class="conatiner">
+            <div class="row">
+                <div class="col-12 toppage_link text-center">
+                    <button onclick="window.location.href = 'HOME_PAGE.html'">HOME</button>
+                    <button><img src="Assest/Image/utomhus/Polygon 1.svg" alt=""></button>
+                    <button onclick="window.location.href = 'Villkor&Frakt.html'"
+                        style="text-transform: uppercase;">Villkor & Frakt</button>
+
+                </div>
+                <div class="col-12 inspiration_heading ">
+                    <h2 class="utomhus_text" style="text-transform: uppercase;">Villkor & Frakt</h2>
+                </div>
+            </div>
+            <div class="row justify-content-center integritetspolicy_list">
+                <div class="col-12">
+                    <h2>Allmänna försäljningsvillkor </h2>
+                    <div class="integritetspolicy_text">
+                        <h4>Köp</h4>
+                        <h4>NI ÄR VÄLKOMNA ATT HANDLA FRÅN VÅR WEBBSHOP</h4>
+                        <p class="m-0">Som kund så ingår ni i ett avtal med , 1 Kakel Store AB, www.Kakelstore.se ägs av
+                            1 Kakel
+                            Store AB i Sverige. <br>
+                            När du har gjort din beställning träffas avtal om köp mellan dig och 1 Kakel Store AB,
+                            www.Kakelstore.se ägs av 1 Kakel Store AB i Sverige. <br>
+                            En bekräftelse skickas ut till den e-postadress som du har angivit vid beställningen. Om
+                            felaktigheter i pris och leveranstid eller andra omständigheter skulle finnas, så
+                            förbehåller sig 1 Kakel Store AB rätten att ändra detta i efterhand. <br>
+                            Vid dessa tillfällen så kontaktar vi dig och informerar om detta. Du har då din fulla rätt
+                            att antingen ändra eller annullera din beställning. <br>
+                            1 Kakel Store AB ingår ej avtal med personer som inte är myndiga (18 år). <br>
+                            1 Kakel Store AB förbehåller sig rätten att neka en order. <br>
+                            Om beställd vara är slutsåld eller av annan anledning inte finns på lager så informeras ni
+                            per e-post om nytt leveransdatum. Önskar ni annullera ordern så meddela oss inom 1 Dag fter
+                            ni fått orderbekräftelsen. <br>
+                            Vi reserverar oss för eventuella tryck- och skrivfel. Vid prisjusteringar på lagd
+                            beställning så informeras du alltid om detta och har då din fulla rätt att ändra eller
+                            annullera din beställning. <br>
+                            1 Kakel Store AB ansvarar inte för skador och/eller missfärgningar och liknande som kan
+                            uppstå vid felaktig montering eller som en följd av felaktigt bruk av varan.
+                            Vid upptäckten av eventuella falska beställningar eller andra bedrägeriförsök så kommer
+                            ärendet att polisanmälas.
+                        </p>
+                        <li>Priserna som anges är inklusive moms. (25%)</li>
+                        <li>Fast fraktkostnad på 599 SEK.</li>
+                        <p>Vid leverans till Norge är det fast fraktkostnad på 2000 SEK.
+                            Vid beställningar av slabs eller storfomatsplattor större än 100/120/150/180/240/300 cm
+                            vilka kräver specialtransport och lyftkranar är fraktkostnaden 1000 SEK, 1 Kakel Store AB
+                            debiterar inga expeditionsavgifter.</p>
+                    </div>
+                    <div class="integritetspolicy_text">
+                        <h4>Betalning</h4>
+                        <p>1 Kakel Store AB använder Klarna betaltjänst för säker betalning, vilket innebär att ni kan
+                            handla först och betala senare och Klarnas Köparskydd. Läs mera Här.
+                            Klarna accepterar både kortbetalningar, faktura samt att man delar upp sina betalningar, mer
+                            info hittar ni om Klarnas villkor Här.
+                            <br>
+                            <br>
+                            Kortbetalning: vår betalleverantörer uppfyller kraven för PCI DSS och inga kortnummer sparas
+                            eller kommer i kontakt med webbutiken.
+                            Förskottsinbetalning till Bankgiro: du kan välja att förskottsbetala din order via Bankgiro.
+                            <br>
+                            <br>
+                            Då gör du en normal bankbetalning till 1 Kakel Store AB och vi ser pengarna efter 1 bankdag
+                            normalt, Normalt tar det någon bankdag innan vi ser er inbetalning så räkna med lite längre
+                            ledtid.
+                            Swish betalning Ni betalar ordersumman i förväg på vårt Swish-nummer. Vi utlevererar er
+                            order när vi noterat er inbetalning. Normalt tar det bara en bankdag innan vi kan bekräfta
+                            er inbetalning.
+                            Avtalskund. Enligt avtal.
+                            <br>
+                            <br>
+                            1 Kakel Store AB är skyddad med SSL till din webbläsare, och kommunikationen mellan dig och
+                            oss är krypterad.
+                        </p>
+                    </div>
+                    <div class="integritetspolicy_text">
+                        <h4>Leveransvillor</h4>
+                        <ul>
+                            <li> Vi behandlar och skickar samtliga orderar inom 1-3 vardagar. Fraktföretagets
+                                leveranstid
+                                tillkommer.</li>
+                            <li>Vi behandlar och skickar ut samtliga order så fort vi har tagit emot eran betalning.
+                            </li>
+                            <li>Orderbehandling kan ta 1-3 dagar, utöver leveranstiden.</li>
+                            <li>Normal leveranstid är ca 7-14 dagar.</li>
+                            <li>Fraktföretagets leveranstid kan tillkomma.</li>
+                        </ul>
+                    </div>
+                    <div class="integritetspolicy_text">
+                        <h4>Leveranssätt</h4>
+                        <p>Vi levererar större försändelser med DHL eller DB Schenker. Vi tar inte ekonomiskt ansvar för
+                            eventuella förseningar beroende på fraktföretaget. Prover skickas i 10×10 cm format och
+                            skickas normalt med posten. <br>
+                            Vid mottagning Du kommer att bli aviserad av DHL/DB Schenker innan leverans och få närmare
+                            information och komma överens om leveransdag och tid. Våra hemleveranser sker under dagtid
+                            om inget annat anges. <br>
+                            Tiderna för leverans kan variera beroende på ort och fraktbolagets utkörningstider. Ändring
+                            eller specificerat leveranstid kan komma att tillföra en extra kostnad hos fraktbolaget.
+                            När sändningen ankommit till slutterminal kommer mottagaren aviseras. Om inte sändningen
+                            körts ut eller hämtats från slutterminal inom fyra (4) dagar efter ankomst så tillkommer
+                            extra kostnad för lagerhyra. <br>
+                            För alla leveranser gäller transport fram till adressen på körbar väg om inget annat anges.
+                            Om du bor i ett lägenhetshus levereras varorna till porten. Vid avlastning ska varorna
+                            inspekteras noggrant av mottagaren innan leveransen kvitteras. <br>
+                            Medan chauffören fortfarande är där ska ni kontrollera att antalet kolli stämmer och om
+                            några skador kan synas på emballage eller på varan.
+                            Det här ska noteras på kvittensen vid mottagandet av leverans innan chauffören åker iväg och
+                            innan fraktsedeln är kvitterad. <br>
+                            Fraktbolag ställer ej av gods utan kvittens av kund eller för kundens räkning ansvarig
+                            mottagare. Detta innebär att du ansvarar för att det finns någon som kan ta emot och
+                            kvittera godset när leveransen <br>
+                            utförs Vid leverans till öar som saknar broförbindelse levererar vi normalt till närmaste
+                            kajplats med adress på fastlandet där kund får ta emot leveransen och sedan själv ombesörja
+                            vidare transport till ö. <br>
+                        <ul>
+                            <li> 1. När varan lämnar oss kommer du att få en avisering via e-post att ditt gods är på
+                                väg.</li>
+                            <li>2. I aviseringen får du även ett tiosiffrigt sändnings-nummer som du kan använda till
+                                att
+                                följa ditt gods.
+                                <ul>
+                                    <li>DHL/DB Schenker aviserar dig om när varan kommer att köras ut till angiven
+                                        adress.</li>
+                                    <li>Kontrollera ALLTID godset innan du skriver på fraktsedeln.</li>
+                                    <li>OBS! Enligt DHL/DB Schenker har kunden 3-4 dagar på sig a00 SEK, beroende på
+                                        kollits storlek.tt svara på deras kontaktförsök.</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <p>Om inte varan hämtas ut tar DHL/DB Schenker ut en avgift mellan 50-10
+                            Om inte varan hämtas ut, utan returneras till 1 Kakel Store AB, står kunden för hela
+                            returkostnaden, plus DHLs/DB Schenkers avgift.
+                        </p>
+                    </div>
+                    <div class="integritetspolicy_text">
+                        <h4>Prov</h4>
+                        <p>Provbitar kostar 39kr/st inkl.frakt.Storleken är 10*10cm eller 30*30cm. Önskar ni större
+                            storlek eller en hel platta, måste ni kontakta oss då frakten är dyrare.
+                            Tyvärr kan vi inte leverera provbitar från ( dekor-border-mönstrat-lister) då man kan inte
+                            kapa mitt i ett mönster.
+                            Vi ber om ursäkt för detta Om vi inte har den eller dem provbitar som ni önskar på lager,
+                            beställer vi från fabriken till en kostnad av 99kr/st inklusive frakt,leveransen på dessa är
+                            7-14 dgr.
+                            Orderbehandling tar 1-3 dagar, utöver leveranstiden. <br>
+                            Varuprover levereras till ett ombud nära dig eller till brevlådan.</p>
+                    </div>
+                    <div class="integritetspolicy_text">
+                        <h4>Ångerrätt</h4>
+                        <p>Vi följer Konsumentverkets rekommendationer, Läs mera Här Din ångerrätt (ångerfristen) och
+                            returrätt gäller under 14 dagar. I ditt meddelande till oss måste det klart framgå att du
+                            ångrar dig. Ångerfristen börjar löpa den dag du tog emot varan (Gäller ej vid
+                            specialbeställda varor, gäller särskilda villkor) Ångerrätten gäller även varor som hämtas
+                            från vårt lager.Du är skyldig att hålla varan i lika gott skick som när du fick den. Du får
+                            inte använda den, men naturligtvis försiktigt undersöka den. Om varan skadas eller kommer
+                            bort på grund av att du är vårdslös förlorar du ångerrätten. Ring oss så snabbt som möjligt
+                            helst inom 2 dagar för att se om beställningen har hunnit gå iväg.</p>
+                    </div>
+                    <div class="integritetspolicy_text">
+                        <h4>Returer</h4>
+                        <p>Vid returer på grund av ångrat köp står kunden för frakt tillbaka till 1 Kakel Store AB
+                            lager. Dessutom tillkommer de extrakostnader en beställningsvara medför, som frakt från
+                            ursprungsland, vikt och kakelgigantens merkostnader. Returfrakten räknas ut beroende på vikt
+                            och storlek på godset, och motsvarar sällan den fraktkostnad Kakelstore.se kan erbjuda
+                            kunden. När transportbolaget ska hämta upp returen är det viktigt att pallen står på ett
+                            underlag som är jämnt så att chauffören kan hämta upp returen med en handtruck.
+                            Kontakta vår kundtjänst snarast vid avbeställning eller ångrat köp för att få en mer exakt
+                            uträkning av dessa merkostnader som beställningsvaror medför.
+                            Returfrakt sker på egen bekostnad förutom om varan är defekt eller om vi har packat fel.
+                            Returer ska skickas på pall med leverans till oss.Inte mot postförskott eller hämtas på
+                            utlämningsställe. <br>
+                            Vid köp av beställningsvaror måste ni senast inom 2 dagar återkomma till oss för att
+                            avbeställa, att slippa extra avgifter vid ångrad order/avbeställning.
+                            Efter det går ordern iväg till fabriken och det går ej längre att returnera era varor eller
+                            annullera er order då det specialbeställts specifikt för er beställning direkt från
+                            fabriken. <br>
+                            Vid köp av beställningsvaror måste ni senast inom 2 dagar återkomma till oss för att
+                            avbeställa.</p>
+                    </div>
+                    <div class="integritetspolicy_text">
+                        <h4>Reklamation</h4>
+                        <p>Om godset är skadat när vi lämnar ut det. Ta emot godset, men kvittera aldrig fraktsedeln
+                            utan att först göra en anmärkning på kvittensdelen. Anmärkningen behöver inte vara
+                            detaljerad, men den är nödvändig för att skadan ska kunna regleras. Det som uppnås med
+                            anmärkningen är att du styrker att skadan inträffat när vi haft hand om godset. Vi får
+                            samtidigt möjlighet att spåra orsaken och vidta åtgärder så att den inte upprepas. Du ska
+                            också försöka begränsa skadan när detta är möjligt. Om skadan kunnat upptäckas först vid
+                            uppackning (dold av emballage) måste du anmäla skadan till oss senast inom sju (7) dagar
+                            efter mottagandet för att den ska kunna tas upp till behandling. Många gånger vill vi
+                            besiktiga skadan. Därför får du inte returnera, sälja eller reparera det skadade godset utan
+                            att först ha kontaktat oss. Tag därför snarast kontakt med oss. Kontakta oss via kundservice
+                            på hemsidan eller ring oss. Du har upp till 14 dagar på dig att hämta ut ditt paket hos
+                            närmaste ombud. Direkt när försändelsen når angiven adress skickas en avi via sms
+                            alternativt post-avi. Om du ej hämtar ut försändelsen inom 14 dagar kommer vi att debitera
+                            dig för våra omkostnader i returfrakt till oss, administrativt samt ny frakt. Debiteringen
+                            för oupphämtad försändelse är 599 SEK för att täcka våra omkostnader. Omfrakten debiteras
+                            250 SEK. En faktura med orderns ursprungliga summa samt dessa belopp skickas från oss samma
+                            dag som en oupphämtad försändelse registreras hos oss. Vi rekommenderar att ni inte anlitar
+                            hantverkare eller tar några andra extra kostnader i samband med er beställning innan varorna
+                            har tagits emot och ni har sett att allting är korrekt. Saknas gods gör du så här. Gör
+                            anmärkning på fraktsedeln innan du kvitterar godset. Kontakta oss via kundservice på
+                            hemsidan eller ring oss. Reklamation och returrätt. Om man kan visa att det är
+                            fabrikationsfel på produkten får man alltid nya produkter. För återbetalning – ange ditt
+                            postgiro-, bankgiro-, personkonto- eller bankkontonummer. Efter uppsättning av varor kan ni
+                            ej längre reklamera eller returnera varor. Notera att bränning skiljer sig på kakel och
+                            klinker vid olika tillverkningar. Var därför noga med att beställa allt i samma omgång.
+                            Behöver du komplettera så kontaktar du vår kundtjänst för att försäkra att det blir samma
+                            bränning. Ångerrätt. Du har enligt distansavtalslagen rätt att returnera beställda felfria
+                            varor utan att ange någon anledning. Meddelande om detta ska lämnas så snart som möjligt,
+                            dock senast inom fjorton (14) dagar från det att varan mottagits. (Gäller ej vid
+                            specialbeställda varor) Vi följer Konsumentverkets rekommendationer se: Konsumentverket.se.
+                            Eftersom det kan uppstå transportskador och andra skador på gods som returneras vill vi att
+                            ni dokumenterar och garanterar att produkterna ska vara hela och rena. Dokumentera med
+                            digitalkamera före och efter emballering, bild på hur godset ser ut när ni returnerar. Märk
+                            godset med vårt ordernummer. Returfrakten betalas av er och skall levereras till vårt lager.
+                            När vi tar emot godset kontrollerar vi om det finns synliga skador på emballage, sedan går
+                            vi igenom allt gods som returneras. Eventuella skador som inte är fraktskador faktureras
+                            avsändaren. Observera att godset inte skall skickas till utlämningsställe, utan leverans ska
+                            ske till Telegramvagen 2, 132 35 Saltsjö-Boo.
+                            Återbetalning sker inom 10 dagar från det att vi mottagit och godkänt er retur.</p>
+                    </div>
+                    <div class="integritetspolicy_text">
+                        <h4>Fraktkostnad</h4>
+                        <ul>
+                            <li>Fraktkostnaden är 599 kr till hela Sverige, undantag är öar och andra destinationer som
+                                inte har reguljär transport av tungt gods. Leverans sker till hemadress.
+                            <li>Ni har också möjlighet att hämta på vårt lager . </li>
+                            <li>Fraktkostnad för varuprover är 39 kr till hela Sverige, levererat till ombud.</li>
+                            <li>
+                                Vid beställningar storfomatsplattor så tillkommer extra fraktkostnader.</li>
+                        </ul>
+                    </div>
+                    <div class="integritetspolicy_text">
+                        <h4>Företagsoffert</h4>
+                        <ul>
+                            <li>Vi offererar förmånligt företag inom bygg, fastighet och butik. </li>
+                            <li> På alla produktsidor hittar ni knappen ”företagsoffert”. Här kan ni fylla i
+                                kontaktuppgifter, aktuell produkt samt ange hur mycket ni önskar så återkommer vi med
+                                offert till er inkl. Frakt och utgångsdatum för priserbjudande.</li>
+                        </ul>
+                    </div>
+                    <div class="integritetspolicy_text">
+                        <h4>Prisoffert</h4>
+                        <p>Speciella prisoffert som vi ger till våra kunder är giltiga endast 1 månad från det datum som
+                            kunden mottager offerten.</p>
+                    </div>
+                    <div class="integritetspolicy_text">
+                        <h4>Produktegenskaper</h4>
+                        <p>Kakel Store säljer bara klinker ifrån ledande europeiska vilka uppfyller EU standard och
+                            svensk standard, alla produkter är första sortering klass BIII EN14411.
+                            Keramiska plattor är tillverkade av naturmaterial som är brända under kontrollerad miljö med
+                            hög precision, det kan dock förekomma små måttavvikelse och nyansavvikelse. Plattor som
+                            avviker för mycket sorterasut vid laserstyrd kontrollprocess. <br>
+                            Det som är viktigt för dig när du beställer är att du alltid beställer tillräckligt med
+                            plattor första gången, vi inte kan garantera att vi kan leverera samma ”batch” vid senare
+                            tillfälle. Batch innebär plattor från samma produktionstillfälle. Färg, nyans och ton kan
+                            variera från produktionstillfälle. <br>
+                            Beställa alltid minst 10% extra vid beställning, beställer ni storformat så skall ni alltid
+                            kontrollera med er plattsättare eftersom det kan krävas mer plattor.
+                            Tolerans måttavvikelse enligt SS10545-2 är en vedertagen standarden för EU och Sverige.
+                            Nedan är en tabell för exempel på måttavvikelse enligt testmetod SS10545-2. <br>
+                            Exempel länk
+                            <br>
+                            <br>
+                            Keramiska plattor har tolerans för avvikelse i skevhet och buktighet, även kallat fogsprång
+                            enligt ovan standard. Fogsprång innebär höjdskillnad mellan två intillliggande plattor som
+                            ligger på plant underlag. <br>
+                            Det är av ytters vikt att underlaget är 100% plant med undantag då man önskar lutning för
+                            vattenavrinning.
+                        </p>
+                    </div>
+                    <div class="integritetspolicy_text">
+                        <h4>Ansvar</h4>
+                        <p>Säljaren kommer att ersätta kostnaden för skadade eller förlorade i leveransen, liksom pro
+                            rata- fraktkostnaderna, eller kommer att kostnadsfritt ersätta varor skadade eller förlorade
+                            vid leverans, <br>
+                            förutsatt att: <br>
+                            Köparen lämnar skriftlig underrättelse om sådan skada eller förlust av varorna inom timmar
+                            efter leveransen. <br>
+                            <br>
+                            Köparen ger säljaren en kopia av ett dokument som bekräftar varukvittot med beskrivning av
+                            skador på varorna samt bilderna på alla skadade varor.
+                            Skadat gods / beställning När ni mottager er vara så har ni en skyldighet att inspektera
+                            varan/pallen, om ni upptäcker en skada så är det av vikt att ni dokumenterar skadan med
+                            innan ni packar upp pallen dokumentera <br>
+                            mobilkamera. Be chauffören att notera skadan på frakthandlingarna som ni skriver på.
+                            Kontakta oss samma dag som ni mottager er vara. <br>
+                            Är det en dold skada, dvs en skada som ni upptäcker vid uppackning så måste ni kontakta oss
+                            inom 7 arbetsdagar, därefter så kan vi inte behandla ert ärende, därav är det av vikt att
+                            man inspekterar sin vara direkt. <br>
+                            Det är kundens ansvar att kontrollera att varorna som levereras är hela och att inget är
+                            skadat innan chauffören har åkt. <br>
+                            Om kunden väljer att inte närvara vid leveransen och varorna är skadade är 1 Kakelstore AB
+                            inte skyldiga att ersätta kunden. <br>
+                            Reklamation accepteras inte efter att plattorna installerade, där av har
+                            kunden/plattsättaren skyldighet att inspektera plattorna innan de installeras så det är rätt
+                            vara. Ni anmäler skadad vara här
+                        </p>
+                    </div>
+                    <div class="integritetspolicy_text">
+                        <h4>Övrigt</h4>
+                        <p>Har ni frågor så kan ni alltid kontakta oss på KAKEL STORE®, ni kan kontakta oss via formulär
+                            längst ner på denna sida via chatt eller via telefon.</p>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+    </div>
+    
+
+
+
+    <!-- footer section -->
+    <footer class="footer">
+        <div class="footer_part1">
+            <div class="conatiner">
+                <div class="row">
+                    <div class="col-6 footer_part1_left">
+                        <div class="footer_logo">
+                            <img src="Assest/Image/footer/logo.svg" alt="">
+                        </div>
+                        <div class="footer_text">
+                            <p> Vi använder cookies, för att öka användarvänligheten i enlighet med lagen om
+                                elektronisk
+                                kommunikation.</p>
+                            <p>Genom att fortsätta använda vår webplats förutsätter vi att du godkänner detta. Läs
+                                mer
+                                om integritetspolicy.</p>
+                        </div>
+                        <div class="footer_social_app">
+                            <img src="Assest/Image/footer/facebook.svg" alt="">
+                            <img src="Assest/Image/footer/insta.svg" alt="">
+                            <img src="Assest/Image/footer/pinterest.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-6 footer_part1_right d-flex justify-content-center align-items-center">
+                        <div class="KUNDSERVICE">
+                            <ul class="p-0">
+                                <li>KUNDSERVICE</li>
+                                <li>Villkor & Frakt</li>
+                                <li>Försändelse Spårning</li>
+                                <li>Vanliga Frågor</li>
+                                <li>Integritetspolicy</li>
+                            </ul>
+                        </div>
+                        <div class="INFORMATION">
+                            <ul>
+                                <li>INFORMATION</li>
+                                <li>Om Oss</li>
+                                <li>Kontakta Oss</li>
+                                <li>Inspirations</li>
+                                <li>Varför välja Granitkeramik?</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer_part2">
+            <div class="conatiner">
+                <div class="row footer_part2_list">
+                    <div class="col-3 footer_part2_list1">
+                        <p class="p-0 m-0">2021 All rights reserved to Kakel store ab</p>
+                    </div>
+                    <div class="col-5 footer_part2_list2">
+                        <img src="Assest/Image/footer/Vector.svg" alt="">
+                        <img src="Assest/Image/footer/image 15.svg" alt="">
+                        <img src="Assest/Image/footer/Vector (2).svg" alt="">
+                        <img src="Assest/Image/footer/image 14.svg" alt="">
+                        <img src="Assest/Image/footer/image 18.svg" alt="">
+                    </div>
+                    <div class="col-3 footer_part2_list3">
+                        <img src="Assest/Image/footer/Certificate.svg" alt="">
+                        <img src="Assest/Image/footer/Google.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- script Links -->
+    <script src="Assest/JS/script.js"></script>
+    <script src="Assest/JS/bootstrap.min.js"></script>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

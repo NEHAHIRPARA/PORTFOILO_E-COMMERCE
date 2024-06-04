@@ -1,0 +1,416 @@
+@media (max-width: 1920px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .menu {
+    width: 526px;
+    height: 100%;
+  }
+
+  .cart-toggle {
+    display: block;
+  }
+
+  .cart {
+    width: 526px;
+    height: 100%;
+  }
+
+  /* .modal-content {
+    margin: auto;
+    display: block;
+    width: 100% !important;
+    max-width: 1356px;
+  }
+
+  .modal-width {
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    background-color: white;
+    bottom: 0px;
+    top: 247px;
+  } */
+
+  .Handla_stil_imgcard {
+    max-width: 182px;
+  }
+}
+
+@media screen and (min-width: 1299px) and (max-width: 1499px) {
+  .kakel_left_part {
+    width: 100%;
+    max-width: 679px;
+
+  }
+
+  .kakel_right_part {
+    width: 500px;
+    height: 425px;
+  }
+
+  .kakel_left_part button img {
+    width: 80%;
+    height: auto;
+  }
+
+  .dropdown-menu.show {
+    transform: translate3d(-340px, 126px, 0px) !important;
+    z-index: 1000;
+    width: calc(100% - -50%);
+    padding-top: 0%;
+  }
+
+  .kakel_right_btn {
+    margin-top: 2%;
+  }
+
+  .kakel_right_part h3 {
+    margin-bottom: 2%;
+  }
+
+  .badrum img {
+    width: 100% !important;
+    height: 244px !important;
+  }
+
+  .badrum_left {
+    justify-content: space-around !important;
+  }
+
+  .menu {
+    width: 526px;
+    height: 100%;
+  }
+
+  .footer_text {
+    width: 600px;
+  }
+
+  .modal-content {
+    max-width: 1000px;
+  }
+
+  .modal-width {
+    top: 150px;
+  }
+
+  #caption2 {
+    right: 52%;
+    width: 346px;
+    bottom: 40%;
+  }
+
+  #caption1 {
+    top: 14%;
+    right: 38%;
+  }
+
+
+
+  .productinfo_popup {
+    max-width: 643px;
+    width: 100%;
+    height: 570px;
+    background-color: white;
+    padding: 1%;
+    position: absolute;
+    right: 4%;
+    top: -16%;
+  }
+
+  .drop2_list {
+    width: 100%;
+    max-width: 347px;
+    height: 100%;
+    max-height: 253px;
+   
+  }
+
+  .inspiration_btn li,
+  .inspiration_btn {
+    width: 295px;
+  }
+
+  .input_title input {
+    width: 275px;
+  }
+
+  .om-oss_list1_left h2 {
+
+    font-size: 40px;
+
+  }
+
+  .om-oss_list2_right h4 {
+    font-size: 26px;
+    line-height: 40px;
+  }
+
+  .om-oss_list2_right p {
+    font-size: 12px;
+    line-height: 17px;
+  }
+
+  .om-oss_list1_left p {
+    font-size: 16px;
+  }
+
+  .om-oss_list_last_text h2 {
+    font-size: 22px;
+    line-height: 16px;
+
+  }
+
+  .om-oss_list_last_text p {
+    font-size: 12px;
+    line-height: 22px;
+  }
+
+  .oss_list_left_img p {
+
+    font-size: 12px !important;
+    line-height: 25px;
+
+  }
+
+  .om-oss_btn {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .oss_list_left_img img {
+    width: 46px;
+    height: 46px;
+    vertical-align: middle;
+  }
+
+  .kategorier_head_btnlist button {
+    padding: 4% 3% 2% 3%;
+  }
+
+  .kategorier_kakel_box {
+    max-width: 244px;
+  }
+
+  .kakel_box {
+    max-width: 208px;
+    width: 100%;
+    height: auto;
+    box-shadow: 0px 3px 16px 0 rgba(0, 0, 0, 0.08);
+    border: 1px solid #D5DEE2;
+  }
+
+  .up-arrows::before {
+    left: 84px;
+    top: 100%;
+  }
+
+  .up-arrows::after {
+    left: 85px;
+    top: 100%;
+  }
+
+
+
+
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1300px) {
+  .modal-content {
+    max-width: 1000px;
+  }
+
+  #caption2 {
+    right: 60%;
+    width: 346px;
+    bottom: 29%;
+  }
+
+  .modal-width {
+    top: 100px;
+
+  }
+
+  .kakel_left_part {
+    width: 100%;
+    max-width: 679px;
+  }
+
+  .kakel_right_part {
+    width: 500px;
+    height: 452px;
+  }
+
+  .kakel_left_part button img {
+    width: 80%;
+    height: auto;
+  }
+
+  .dropdown-menu.show {
+    transform: translate3d(-301px, 126px, 0px) !important;
+    z-index: 1000;
+    width: calc(100% - -50%);
+    padding-top: 0%;
+  }
+
+  .kakel_right_btn {
+    margin-top: 2%;
+  }
+
+  .kakel_right_part h3 {
+    margin-bottom: 2%;
+  }
+
+  .badrum_left {
+    justify-content: space-around !important;
+  }
+
+  .menu {
+    width: 526px;
+    height: 100%;
+  }
+
+  .footer_text {
+    width: 500px;
+  }
+
+  .productinfo_popup {
+    max-width: 640px;
+    width: 100%;
+    height: 573px;
+    background-color: white;
+    padding: 1%;
+    position: absolute;
+    right: 7%;
+    top: -8%;
+  }
+
+  .drop2_list {
+    width: 337px;
+    height: 258px;
+  }
+
+  .drop1_list {
+    width: 337px;
+    height: 258px;
+  }
+
+  .dropdown-btn {
+    width: 337px;
+  }
+
+  .inspiration_btn li,
+  .inspiration_btn {
+    width: 295px;
+  }
+
+  .input_title input {
+    width: 245px;
+  }
+
+  .om-oss_list1_left h2 {
+
+    font-size: 40px;
+
+  }
+
+  .om-oss_list2_right h4 {
+    font-size: 26px;
+    line-height: 40px;
+  }
+
+  .om-oss_list2_right p {
+    font-size: 12px;
+    line-height: 17px;
+  }
+
+  .om-oss_list1_left p {
+    font-size: 16px;
+  }
+
+  .om-oss_list_last_text h2 {
+    font-size: 22px;
+    line-height: 16px;
+
+  }
+
+  .om-oss_list_last_text p {
+    font-size: 12px;
+    line-height: 22px;
+  }
+
+  .oss_list_left_img p {
+
+    font-size: 12px !important;
+    line-height: 25px;
+
+  }
+
+  .om-oss_btn {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .oss_list_left_img img {
+    width: 46px;
+    height: 46px;
+    vertical-align: middle;
+  }
+
+  .Handla_stil_imgcard {
+    max-width: 172px;
+  }
+
+  .kategorier_head_btnlist button {
+    padding: 4% 2% 2% 2%;
+  }
+
+  .kategorier_kakel_box {
+    max-width: 244px;
+  }
+
+  .kakel_box {
+    max-width: 186px;
+    width: 100%;
+    height: auto;
+    box-shadow: 0px 3px 16px 0 rgba(0, 0, 0, 0.08);
+    border: 1px solid #D5DEE2;
+  }
+
+  .up-arrows:before {
+
+    left: 67px;
+    top: 100%;
+
+  }
+
+  .up-arrows:after {
+
+    left: 68px;
+    top: 100%;
+
+  }
+
+  .modal-content {
+    max-width: 1132px;
+  }
+
+  .modal-width {
+    top: 166px;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .logo img {
+    width: 228PX;
+    height: 44px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {}
+
+@media (max-width: 575px) {}

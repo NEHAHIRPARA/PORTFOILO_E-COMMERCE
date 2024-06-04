@@ -1,0 +1,1171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>utomhus</title>
+
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="Assest/CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="Assest/CSS/style.css">
+    <link rel="stylesheet" href="Assest/CSS/responsive.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- Icon Links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+
+
+
+
+</head>
+
+<body>
+    <!-- header section -->
+    <header class="header">
+        <div class="conatiner">
+            <div class="row d-flex align-item-center justify-content-center header_part1">
+                <div class="col-8 header_part1_info d-flex align-items-center">
+                    <h5>SNABBA LEVERANSER</h5>
+                    <h5>Hög kvalité</h5>
+                    <h5>Miljötänk</h5>
+                </div>
+                <div class="col-2 d-flex justify-content-center align-items-center">
+                    <img src="Assest/Image/header/Google.png" alt="img">
+                </div>
+            </div>
+            <div class="row header_part2">
+                <div class="col-3 logo d-flex align-items-center justify-content-center"
+                    onclick="window.location.href='HOME_PAGE.html'">
+                    <img src="Assest/Image/header/Logo.png" alt="">
+                </div>
+                <div class="col-8 serch_icon">
+                    <div class="header_middle d-flex align-items-center justify-content-between">
+                        <div class="searchbar d-flex align-items-center">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input type="search" placeholder="Vad söker du?">
+                        </div>
+
+                        <div class="iocn_list d-flex justify-content-around align-items-center">
+                            <i class="fa-solid fa-clock-rotate-left"
+                                onclick="window.location.href = 'nyligensettprodukt.html'"></i>
+                            <i class="fa-regular fa-heart" onclick="window.location.href = 'favoriteproduct.html'"></i>
+                            <i class="fa-regular fa-user" onclick="window.location.href = 'Account.html'"></i>
+                            <i>
+                                <div onclick="togglecart()">
+                                    <i class="fa-solid fa-cart-shopping" style="border: none;">
+                                    </i>
+                                    <nav class="cart" id="open">
+                                        <div class="menu2" onclick="event.stopPropagation();">
+                                            <div class="cart_1 d-flex align-items-center">
+                                                <button class="cartbtn" onclick="closecart()"><i
+                                                        class="fa-solid fa-xmark" style="border: none;"></i></button>
+                                                <p class="p-0 m-0">varukorg</p>
+                                            </div>
+                                            <ul class="d-flex justify-content-center align-items-center">
+                                                <li><img src="Assest/Image/header/kakel-klinker/cart.svg" alt=""></li>
+                                                <div class="carttext">du har inga produkter i din kundvagn</div>
+                                                <div class="cart_btn d-flex justify-content-center">
+                                                    <button>Fortsätt handla</button>
+                                                </div>
+                                            </ul>
+                                        </div>
+                                    </nav>
+                                </div>
+                            </i>
+                        </div>
+                    </div>
+                    <div class="header_btngrp d-flex align-items-center justify-content-between">
+                        <div class="header_btn1" id="hbtn1">
+                            <button type="button"
+                                class="btn dropdown-toggle button1 d-flex align-items-center justify-content-center  text-center"
+                                id="dropdownToggle1" data-toggle="dropdown">
+                                <p class="p-0 m-0">kakel & klinker</p>
+                                <span class="icon">
+                                    <i class=" fa-solid fa-chevron-down">
+                                    </i>
+                                </span>
+                            </button>
+
+                            <!-- Dropdown options -->
+
+                            <div class="dropdown-menu" id="dropdown1" onclick="event.stopPropagation()">
+                                <div class="kakel_list">
+                                    <div class="kakel_left_part" id="kakel_left">
+                                        <button id="textil" class="dropdown-button"><img
+                                                src="Assest/Image/header/kakel-klinker/textile.svg" alt="img">
+                                            <p>textil</p>
+                                        </button>
+                                        <button><img src="Assest/Image/header/kakel-klinker/Mönstrat.svg" alt="img">
+                                            <p>Mönstrat</p>
+                                        </button>
+                                        <button><img src="Assest/Image/header/kakel-klinker/betong.svg" alt="img">
+                                            <p>betong</p>
+                                        </button>
+                                        <button id="hexagon" class="dropdown-button"><img
+                                                src="Assest/Image/header/kakel-klinker/hexagon.svg" alt="img">
+                                            <p>hexagon</p>
+                                        </button>
+                                        <button><img src="Assest/Image/header/kakel-klinker/metall.png" alt="img">
+                                            <p>metall</p>
+                                        </button>
+                                        <button><img src="Assest/Image/header/kakel-klinker/sten.svg" alt="img">
+                                            <p>sten</p>
+                                        </button>
+                                        <button><img src="Assest/Image/header/kakel-klinker/mosaik.svg" alt="img">
+                                            <p>mosaik</p>
+                                        </button>
+                                        <button id="marmor" class="dropdown-button"><img
+                                                src="Assest/Image/header/kakel-klinker/marmor.svg" alt="img">
+                                            <p>marmor</p>
+                                        </button>
+                                        <button><img src="Assest/Image/header/kakel-klinker/lister.svg" alt="img">
+                                            <p>lister</p>
+                                        </button>
+                                        <button><img src="Assest/Image/header/kakel-klinker/Trä.png" alt="img">
+                                            <p>Trä</p>
+                                        </button>
+                                        <button><img src="Assest/Image/header/kakel-klinker/enfärgat.svg" alt="img">
+                                            <p>enfärgat</p>
+                                        </button>
+                                        <button><img src="Assest/Image/header/kakel-klinker/metro.svg" alt="img">
+                                            <p>metro</p>
+                                        </button>
+                                        <button><img src="Assest/Image/header/kakel-klinker/lera.svg" alt="img">
+                                            <p>lera</p>
+                                        </button>
+                                        <button><img src="Assest/Image/header/kakel-klinker/decor.svg" alt="img">
+                                            <p>decor</p>
+                                        </button>
+                                        <button><img src="Assest/Image/header/kakel-klinker/storstorlek.svg" alt="img">
+                                            <p>stor storlek</p>
+                                        </button>
+                                    </div>
+                                    <div class="kakel_right_list toggle" id="textil" style="display: block;">
+                                        <div class="kakel_right_part ">
+                                            <h3 class="text-center">TEXTILE</h3>
+                                            <div class="kakel_right d-flex justify-content-between">
+                                                <div class="kakel_right_part1">
+                                                    <div class="imggrp">
+                                                        <img src="Assest/Image/header/kakel-klinker/textil_bg.svg"
+                                                            alt="img">
+                                                        <div class="round d-flex text-center justify-content-center">
+                                                            <p class="p-0 m-0">-15% </p><span>Discount</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="img_text">Italienska Badrumsmöbelset Baden Haus
+                                                        Bellagio Stengrå (3 Delar)
+                                                    </div>
+                                                    <div class="price">
+                                                        <h6>13000.00 kr</h6>
+                                                        <h4>11999.00 kr</h4>
+                                                    </div>
+                                                    <div
+                                                        class="bottompart d-flex justify-content-between align-items-center">
+                                                        <div class="roundgrp d-flex align-items-center">
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround">+18</div>
+                                                        </div>
+                                                        <button class="whishlistbtn"><i class="fa-regular fa-heart"
+                                                                id="heart1"></i></button>
+                                                    </div>
+                                                </div>
+                                                <div class="kakel_right_part2">
+                                                    <div class="imggrp">
+                                                        <img src="Assest/Image/header/kakel-klinker/textilebg2.svg"
+                                                            alt="img">
+                                                        <div class="round d-flex text-center justify-content-center">
+                                                            <p class="p-0 m-0">-15% </p><span>Discount</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="img_text">Italienska Badrumsmöbelset Baden Haus
+                                                        Bellagio Stengrå (3 Delar)
+                                                    </div>
+                                                    <div class="price">
+                                                        <h6>13000.00 kr</h6>
+                                                        <h4>11999.00 kr</h4>
+                                                    </div>
+                                                    <div
+                                                        class="bottompart d-flex justify-content-between align-items-center">
+                                                        <div class="roundgrp d-flex align-items-center">
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround">+18</div>
+                                                        </div>
+                                                        <button class="whishlistbtn"><i class="fa-regular fa-heart"
+                                                                id="heart2"></i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button class="btn kakel_right_btn">Utforska vår
+                                                shop</button>
+                                        </div>
+                                    </div>
+                                    <div class="kakel_right_list toggle" id="hexagon" style="display: none;">
+                                        <div class="kakel_right_part ">
+                                            <h3 class="text-center">HEXAGON</h3>
+                                            <div class="kakel_right d-flex justify-content-between">
+                                                <div class="kakel_right_part1">
+                                                    <div class="imggrp">
+                                                        <img src="Assest/Image/header/kakel-klinker/Hexagonbg1.svg"
+                                                            alt="img">
+                                                        <div class="round d-flex text-center justify-content-center">
+                                                            <p class="p-0 m-0">-15% </p><span>Discount</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="img_text">Italienska Badrumsmöbelset Baden Haus
+                                                        Bellagio Stengrå (3 Delar)
+                                                    </div>
+                                                    <div class="price">
+                                                        <h6>13000.00 kr</h6>
+                                                        <h4>11999.00 kr</h4>
+                                                    </div>
+                                                    <div
+                                                        class="bottompart d-flex justify-content-between align-items-center">
+                                                        <div class="roundgrp d-flex align-items-center">
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround">+18</div>
+                                                        </div>
+                                                        <button class="whishlistbtn"><i class="fa-regular fa-heart"
+                                                                id="heart3"></i></button>
+                                                    </div>
+                                                </div>
+                                                <div class="kakel_right_part2">
+                                                    <div class="imggrp">
+                                                        <img src="Assest/Image/header/kakel-klinker/Hexagonbg2.svg"
+                                                            alt="img">
+                                                        <div class="round d-flex text-center justify-content-center">
+                                                            <p class="p-0 m-0">-15% </p><span>Discount</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="img_text">Italienska Badrumsmöbelset Baden Haus
+                                                        Bellagio Stengrå (3 Delar)
+                                                    </div>
+                                                    <div class="price">
+                                                        <h6>13000.00 kr</h6>
+                                                        <h4>11999.00 kr</h4>
+                                                    </div>
+                                                    <div
+                                                        class="bottompart d-flex justify-content-between align-items-center">
+                                                        <div class="roundgrp d-flex align-items-center">
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround">+18</div>
+                                                        </div>
+                                                        <button class="whishlistbtn"><i class="fa-regular fa-heart"
+                                                                id="heart4"></i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a href="#" style="display: flex;"><button
+                                                    class="btn kakel_right_btn">Utforska vår
+                                                    shop</button></a>
+                                        </div>
+                                    </div>
+                                    <div class="kakel_right_list toggle" id="marmor" style="display: none;">
+                                        <div class="kakel_right_part ">
+                                            <h3 class="text-center">MARMOR</h3>
+                                            <div class="kakel_right d-flex justify-content-between">
+                                                <div class="kakel_right_part1">
+                                                    <div class="imggrp">
+                                                        <img src="Assest/Image/header/kakel-klinker/marmorbg1.svg"
+                                                            alt="img">
+                                                        <div class="round d-flex text-center justify-content-center">
+                                                            <p class="p-0 m-0">-15% </p><span>Discount</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="img_text">Italienska Badrumsmöbelset Baden Haus
+                                                        Bellagio Stengrå (3 Delar)
+                                                    </div>
+                                                    <div class="price">
+                                                        <h6>13000.00 kr</h6>
+                                                        <h4>11999.00 kr</h4>
+                                                    </div>
+                                                    <div
+                                                        class="bottompart d-flex justify-content-between align-items-center">
+                                                        <div class="roundgrp d-flex align-items-center">
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround">+18</div>
+                                                        </div>
+                                                        <button class="whishlistbtn"><i class="fa-regular fa-heart"
+                                                                id="heart5"></i></button>
+                                                    </div>
+                                                </div>
+                                                <div class="kakel_right_part2">
+                                                    <div class="imggrp">
+                                                        <img src="Assest/Image/header/kakel-klinker/marmorbg2.svg"
+                                                            alt="img">
+                                                        <div class="round d-flex text-center justify-content-center">
+                                                            <p class="p-0 m-0">-15% </p><span>Discount</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="img_text">Italienska Badrumsmöbelset Baden Haus
+                                                        Bellagio Stengrå (3 Delar)
+                                                    </div>
+                                                    <div class="price">
+                                                        <h6>13000.00 kr</h6>
+                                                        <h4>11999.00 kr</h4>
+                                                    </div>
+                                                    <div
+                                                        class="bottompart d-flex justify-content-between align-items-center">
+                                                        <div class="roundgrp d-flex align-items-center">
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround">+18</div>
+                                                        </div>
+                                                        <button class="whishlistbtn"><i class="fa-regular fa-heart"
+                                                                id="heart6"></i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a href="#" style="display: flex;"><button
+                                                    class="btn kakel_right_btn">Utforska vår
+                                                    shop</button></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header_btn2" id="hbtn1">
+                            <button type="button"
+                                class="btn btn-success dropdown-toggle button1 d-flex align-items-center justify-content-center"
+                                id="dropdownToggle2" data-toggle="dropdown">
+                                <p class="p-0 m-0">badrum</p>
+                                <span class="icon">
+                                    <i class=" fa-solid fa-chevron-down"></i>
+                                </span>
+                            </button>
+
+                            <!-- Dropdown options -->
+                            <div class="dropdown-menu" id="dropdown1" onclick="event.stopPropagation()">
+                                <div class="kakel_list">
+                                    <div class="kakel_left_part badrum_left" id="kakel_left">
+                                        <button id="textil" class="dropdown-button boxsh badrum"><img
+                                                src="Assest/Image/header/kakel-klinker/badrum1.svg" alt="img">
+                                            <p>badrumsmöbler</p>
+                                        </button>
+                                        <button id="hexagon" class="dropdown-button boxsh badrum"><img
+                                                src="Assest/Image/header/kakel-klinker/badrum2.svg" alt="img">
+                                            <p>tvättställ</p>
+                                        </button>
+
+                                        <button id="marmor" class="dropdown-button boxsh badrum"><img
+                                                src="Assest/Image/header/kakel-klinker/badrum3.svg" alt="img">
+                                            <p>speglar</p>
+                                        </button>
+                                        <button class="boxsh badrum"><img
+                                                src="Assest/Image/header/kakel-klinker/badrum4.svg" alt="img">
+                                            <p>tvättställsskåp</p>
+                                        </button>
+                                        <button class="boxsh badrum"><img
+                                                src="Assest/Image/header/kakel-klinker/badrum6.svg" alt="img">
+                                            <p>marmor</p>
+                                        </button>
+                                    </div>
+                                    <div class="kakel_right_list toggle" id="textil" style="display: block;">
+                                        <div class="kakel_right_part ">
+                                            <h3 class="text-center" style="text-transform: capitalize;">badrumsmöbler
+                                            </h3>
+                                            <div class="kakel_right d-flex justify-content-between">
+                                                <div class="kakel_right_part1">
+                                                    <div class="imggrp">
+                                                        <img src="Assest/Image/header/kakel-klinker/badrumsmöbler1.svg"
+                                                            alt="img">
+                                                        <div class="round d-flex text-center justify-content-center">
+                                                            <p class="p-0 m-0">-15% </p><span>Discount</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="img_text" style="text-transform: capitalize;">Italienska
+                                                        Badrumsmöbelset Baden Haus Bellagio Stengrå (3 Delar)
+                                                    </div>
+                                                    <div class="price">
+                                                        <h6>13000.00 kr</h6>
+                                                        <h4>11999.00 kr</h4>
+                                                    </div>
+                                                    <div
+                                                        class="bottompart d-flex justify-content-between align-items-center">
+                                                        <div class="roundgrp d-flex align-items-center">
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround">+18</div>
+                                                        </div>
+                                                        <button class="whishlistbtn"><i class="fa-regular fa-heart"
+                                                                id="heart1"></i></button>
+                                                    </div>
+                                                </div>
+                                                <div class="kakel_right_part2">
+                                                    <div class="imggrp">
+                                                        <img src="Assest/Image/header/kakel-klinker/badrumsmöbler2.svg"
+                                                            alt="img">
+                                                        <div class="round d-flex text-center justify-content-center">
+                                                            <p class="p-0 m-0">-15% </p><span>Discount</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="img_text" style="text-transform: capitalize;">Italienska
+                                                        Badrumsmöbelset Baden Haus Bellagio Stengrå (3 Delar)
+
+                                                    </div>
+                                                    <div class="price">
+                                                        <h6>13000.00 kr</h6>
+                                                        <h4>11999.00 kr</h4>
+                                                    </div>
+                                                    <div
+                                                        class="bottompart d-flex justify-content-between align-items-center">
+                                                        <div class="roundgrp d-flex align-items-center">
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround">+18</div>
+                                                        </div>
+                                                        <button class="whishlistbtn"><i class="fa-regular fa-heart"
+                                                                id="heart2"></i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button class="btn kakel_right_btn">Utforska vår
+                                                shop</button>
+                                        </div>
+                                    </div>
+                                    <div class="kakel_right_list toggle" id="hexagon" style="display: none;">
+                                        <div class="kakel_right_part ">
+                                            <h3 class="text-center" style="text-transform: capitalize;">speglar</h3>
+                                            <div class="kakel_right d-flex justify-content-between">
+                                                <div class="kakel_right_part1">
+                                                    <div class="imggrp">
+                                                        <img src="Assest/Image/header/kakel-klinker/speglar1.svg"
+                                                            alt="img">
+                                                        <div class="round d-flex text-center justify-content-center">
+                                                            <p class="p-0 m-0">-15% </p><span>Discount</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="img_text" style="text-transform: capitalize;">Italienska
+                                                        Badrumsmöbelset Baden Haus
+                                                        Bellagio Stengrå (3 Delar)
+                                                    </div>
+                                                    <div class="price">
+                                                        <h6>13000.00 kr</h6>
+                                                        <h4>11999.00 kr</h4>
+                                                    </div>
+                                                    <div
+                                                        class="bottompart d-flex justify-content-between align-items-center">
+                                                        <div class="roundgrp d-flex align-items-center">
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround">+18</div>
+                                                        </div>
+                                                        <button class="whishlistbtn"><i class="fa-regular fa-heart"
+                                                                id="heart3"></i></button>
+                                                    </div>
+                                                </div>
+                                                <div class="kakel_right_part2">
+                                                    <div class="imggrp">
+                                                        <img src="Assest/Image/header/kakel-klinker/speglar2.svg"
+                                                            alt="img">
+                                                        <div class="round d-flex text-center justify-content-center">
+                                                            <p class="p-0 m-0">-15% </p><span>Discount</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="img_text" style="text-transform: capitalize;">Italienska
+                                                        Badrumsmöbelset Baden Haus
+                                                        Bellagio Stengrå (3 Delar)
+                                                    </div>
+                                                    <div class="price">
+                                                        <h6>13000.00 kr</h6>
+                                                        <h4>11999.00 kr</h4>
+                                                    </div>
+                                                    <div
+                                                        class="bottompart d-flex justify-content-between align-items-center">
+                                                        <div class="roundgrp d-flex align-items-center">
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround">+18</div>
+                                                        </div>
+                                                        <button class="whishlistbtn"><i class="fa-regular fa-heart"
+                                                                id="heart4"></i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a href="#" style="display: flex;"><button
+                                                    class="btn kakel_right_btn">Utforska vår
+                                                    shop</button></a>
+                                        </div>
+                                    </div>
+                                    <div class="kakel_right_list toggle" id="marmor" style="display: none;">
+                                        <div class="kakel_right_part ">
+                                            <h3 class="text-center" style="text-transform: capitalize;">tvättställ</h3>
+                                            <div class="kakel_right d-flex justify-content-between">
+                                                <div class="kakel_right_part1">
+                                                    <div class="imggrp">
+                                                        <img src="Assest/Image/header/kakel-klinker/tvättställ1.svg"
+                                                            alt="img">
+                                                        <div class="round d-flex text-center justify-content-center">
+                                                            <p class="p-0 m-0">-15% </p><span>Discount</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="img_text" style="text-transform: capitalize;">Italienska
+                                                        Badrumsmöbelset Baden Haus
+                                                        Bellagio Stengrå (3 Delar)
+                                                    </div>
+                                                    <div class="price">
+                                                        <h6>13000.00 kr</h6>
+                                                        <h4>11999.00 kr</h4>
+                                                    </div>
+                                                    <div
+                                                        class="bottompart d-flex justify-content-between align-items-center">
+                                                        <div class="roundgrp d-flex align-items-center">
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround">+18</div>
+                                                        </div>
+                                                        <button class="whishlistbtn"><i class="fa-regular fa-heart"
+                                                                id="heart5"></i></button>
+                                                    </div>
+                                                </div>
+                                                <div class="kakel_right_part2">
+                                                    <div class="imggrp">
+                                                        <img src="Assest/Image/header/kakel-klinker/tvättställ2.svg"
+                                                            alt="img">
+                                                        <div class="round d-flex text-center justify-content-center">
+                                                            <p class="p-0 m-0">-15% </p><span>Discount</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="img_text" style="text-transform: capitalize;">Italienska
+                                                        Badrumsmöbelset Baden Haus
+                                                        Bellagio Stengrå (3 Delar)
+                                                    </div>
+                                                    <div class="price">
+                                                        <h6>13000.00 kr</h6>
+                                                        <h4>11999.00 kr</h4>
+                                                    </div>
+                                                    <div
+                                                        class="bottompart d-flex justify-content-between align-items-center">
+                                                        <div class="roundgrp d-flex align-items-center">
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround"></div>
+                                                            <div class="colorround">+18</div>
+                                                        </div>
+                                                        <button class="whishlistbtn"><i class="fa-regular fa-heart"
+                                                                id="heart6"></i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a href="#" style="display: flex;"><button
+                                                    class="btn kakel_right_btn">Utforska vår
+                                                    shop</button></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header_btn3">
+                            <button type="button"
+                                class="btn dropdown-toggle button1 d-flex align-items-center justify-content-center text-center"
+                                id="dropdownToggle" data-toggle="dropdown">
+                                <p class="p-0 m-0">art deco / exclusive</p>
+                            </button>
+                        </div>
+                        <div class="header_btn4">
+                            <button type="button"
+                                class="btn btn-success dropdown-toggle button1 d-flex align-items-center justify-content-center text-center"
+                                id="dropdownToggle" data-toggle="dropdown"
+                                onclick="window.location.href = 'utomhus.html'">
+                                <p class="p-0 m-0">utomnus</p>
+                            </button>
+                        </div>
+                        <div class="header_btn5">
+                            <button type="button"
+                                class="btn btn-success dropdown-toggle button1 d-flex align-items-center justify-content-center text-center"
+                                id="dropdownToggle" data-toggle="dropdown">
+                                <p class="p-0 m-0">stor storlek</p>
+                            </button>
+                        </div>
+                        <div class="header_btn6">
+                            <button type="button"
+                                class="btn btn-success dropdown-toggle button1 d-flex align-items-center justify-content-center text-center"
+                                id="dropdownToggle" data-toggle="dropdown"
+                                onclick="window.location.href = 'inspiration.html';">
+                                <p class="p-0 m-0">inspiration</p>
+
+                            </button>
+
+
+                        </div>
+                        <div class="header_btn7" onclick="toggleMenu()">
+                            <a href="#"><i class="fa-solid fa-bars"></i>
+                                <span>MENU</span></a>
+
+                            <nav class="menu" id="close">
+                                <div class="menu2" onclick="event.stopPropagation();">
+                                    <div class="menupart_1 align-items-center">
+                                        <button class="cartbtn" onclick="closemenu();"><i
+                                                class="fa-solid fa-xmark"></i></button>
+                                        <p class="p-0 m-0">MENU</p>
+                                    </div>
+                                    <ul class="d-flex justify-content-center align-items-center">
+                                        <li><a href="Försändelsespårning.html">försändelse spårning</a></li>
+                                        <li><a href="kontaktaoss.html">kontakta oss</a></li>
+                                        <li><a href="VanligaFrågor1.html">vanliga frågor</a></li>
+                                        <li><a href="Villkor&Frakt.html">villkor & frakt</a></li>
+                                        <li><a href="om_oss.html">om oss</a></li>
+                                        <li><a href="integritetspolicy.html">integritetspolicy</a></li>
+                                    </ul>
+                                    <div class="socialapp_icon d-flex justify-content-center">
+                                        <a href="#"><img src="Assest/Image/header/facebook.svg" alt=""></a>
+                                        <a href="#"><img src="Assest/Image/header/Insta.svg" alt=""></a>
+                                        <a href="#"><img src="Assest/Image/header/pint.svg" alt=""></a>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-1 header_right d-flex align-items-end justify-content-center">
+                    <a href="#">
+                        <p>click to minimize</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- utomhus -->
+    <div class="utomhus">
+        <div class="conatiner">
+            <div class="row">
+                <div class="col-12 toppage_link text-center">
+                    <button onclick="window.location.href = 'HOME_PAGE.html'">HOME</button>
+                    <button><img src="Assest/Image/utomhus/Polygon 1.svg" alt=""></button>
+                    <button onclick="window.location.href = 'inspiration.html'">INSPIRATION</button>
+                    <button><img src="Assest/Image/utomhus/Polygon 1.svg" alt=""></button>
+                    <button onclick="window.location.href = 'utomhus.html'">UTOMHUS</button>
+                </div>
+                <div class="col-12 inspiration_heading ">
+                    <h2 class="utomhus_text">UTOMHUS</h2>
+                </div>
+            </div>
+            <div class="row d-flex align-items-center justify-content-center utomhus_imglist">
+                <div class="col-4 d-flex align-items-center justify-content-center utomhus_img ">
+                    <img src="Assest/Image/utomhus/bg1.svg" alt="" class="modal-trigger im1"
+                        data-src="Assest/Image/utomhus/bg1.svg"
+                        data-caption1="Utomhus Antihalk Klinker Devon Pearl Betong 61×61 20mm"
+                        data-caption2="Utomhus 20mm Antihalk Klinker Capert Sand 50x100cm" onclick=" modalimg()"
+                        style="height: 100%;">
+                    <div class="utomhus_round"><i class="fa-regular fa-heart" id="heart5"></i></div>
+
+                </div>
+                <div class="col-4 d-flex align-items-center justify-content-center utomhus_img ">
+                    <img src="Assest/Image/utomhus/bg2.svg" alt="" class="modal-trigger im2"
+                        data-src="Assest/Image/utomhus/bg2.svg"
+                        data-caption1="Utomhus Antihalk Klinker Devon Pearl Betong 61×61 20mm"
+                        data-caption2="Utomhus 20mm Antihalk Clays Jordfärg 75.5×75.5"
+                        data-caption3="Utomhus Antihalk Klinker Devon Pearl Betong 61×61 20mm" onclick=" modalimg()">
+                    <div class="utomhus_round"><i class="fa-regular fa-heart" id="heart5"></i></div>
+                </div>
+                <div class="col-4 d-flex align-items-center justify-content-center utomhus_img ">
+                    <img src="Assest/Image/utomhus/bg3.svg" alt="" class="modal-trigger im3"
+                        data-src="Assest/Image/utomhus/bg3.svg"
+                        data-caption1="Utomhus Antihalk Klinker Devon Pearl Betong 61×61 20mm"
+                        data-caption2="Utomhus 20mm Antihalk Klinker Capert Sand 50x100cm" onclick=" modalimg()">
+                    <div class="utomhus_round"><i class="fa-regular fa-heart" id="heart5"></i></div>
+                </div>
+                <div class="col-4 d-flex align-items-center justify-content-center utomhus_img ">
+                    <img src="Assest/Image/utomhus/bg1.svg" alt="" class="modal-trigger im1"
+                        data-src="Assest/Image/utomhus/bg1.svg"
+                        data-caption1="Utomhus Antihalk Klinker Devon Pearl Betong 61×61 20mm"
+                        data-caption2="Utomhus 20mm Antihalk Klinker Capert Sand 50x100cm" onclick=" modalimg()"
+                        style="height: 100%;">
+                    <div class="utomhus_round"><i class="fa-regular fa-heart" id="heart5"></i></div>
+
+                </div>
+                <div class="col-4 d-flex align-items-center justify-content-center utomhus_img ">
+                    <img src="Assest/Image/utomhus/bg2.svg" alt="" class="modal-trigger im2"
+                        data-src="Assest/Image/utomhus/bg2.svg"
+                        data-caption1="Utomhus Antihalk Klinker Devon Pearl Betong 61×61 20mm"
+                        data-caption2="Utomhus 20mm Antihalk Clays Jordfärg 75.5×75.5"
+                        data-caption3="Utomhus Antihalk Klinker Devon Pearl Betong 61×61 20mm" onclick=" modalimg()">
+                    <div class="utomhus_round"><i class="fa-regular fa-heart" id="heart5"></i></div>
+                </div>
+                <div class="col-4 d-flex align-items-center justify-content-center utomhus_img ">
+                    <img src="Assest/Image/utomhus/bg3.svg" alt="" class="modal-trigger im3"
+                        data-src="Assest/Image/utomhus/bg3.svg"
+                        data-caption1="Utomhus Antihalk Klinker Devon Pearl Betong 61×61 20mm"
+                        data-caption2="Utomhus 20mm Antihalk Klinker Capert Sand 50x100cm" onclick=" modalimg()">
+                    <div class="utomhus_round"><i class="fa-regular fa-heart" id="heart5"></i></div>
+                </div>
+                <div class="col-4 d-flex align-items-center justify-content-center utomhus_img ">
+                    <img src="Assest/Image/utomhus/bg1.svg" alt="" class="modal-trigger im1"
+                        data-src="Assest/Image/utomhus/bg1.svg"
+                        data-caption1="Utomhus Antihalk Klinker Devon Pearl Betong 61×61 20mm"
+                        data-caption2="Utomhus 20mm Antihalk Klinker Capert Sand 50x100cm" onclick=" modalimg()"
+                        style="height: 100%;">
+                    <div class="utomhus_round"><i class="fa-regular fa-heart" id="heart5"></i></div>
+
+                </div>
+                <div class="col-4 d-flex align-items-center justify-content-center utomhus_img ">
+                    <img src="Assest/Image/utomhus/bg2.svg" alt="" class="modal-trigger im2"
+                        data-src="Assest/Image/utomhus/bg2.svg"
+                        data-caption1="Utomhus Antihalk Klinker Devon Pearl Betong 61×61 20mm"
+                        data-caption2="Utomhus 20mm Antihalk Clays Jordfärg 75.5×75.5"
+                        data-caption3="Utomhus Antihalk Klinker Devon Pearl Betong 61×61 20mm" onclick=" modalimg()">
+                    <div class="utomhus_round"><i class="fa-regular fa-heart" id="heart5"></i></div>
+                </div>
+                <div class="col-4 d-flex align-items-center justify-content-center utomhus_img ">
+                    <img src="Assest/Image/utomhus/bg3.svg" alt="" class="modal-trigger im3"
+                        data-src="Assest/Image/utomhus/bg3.svg"
+                        data-caption1="Utomhus Antihalk Klinker Devon Pearl Betong 61×61 20mm"
+                        data-caption2="Utomhus 20mm Antihalk Klinker Capert Sand 50x100cm" onclick=" modalimg()">
+                    <div class="utomhus_round"><i class="fa-regular fa-heart" id="heart5"></i></div>
+                </div>
+                <div class="col-4 d-flex align-items-center justify-content-center utomhus_img ">
+                    <img src="Assest/Image/utomhus/bg1.svg" alt="" class="modal-trigger im1"
+                        data-src="Assest/Image/utomhus/bg1.svg"
+                        data-caption1="Utomhus Antihalk Klinker Devon Pearl Betong 61×61 20mm"
+                        data-caption2="Utomhus 20mm Antihalk Klinker Capert Sand 50x100cm" onclick=" modalimg()"
+                        style="height: 100%;">
+                    <div class="utomhus_round"><i class="fa-regular fa-heart" id="heart5"></i></div>
+
+                </div>
+                <div class="col-4 d-flex align-items-center justify-content-center utomhus_img ">
+                    <img src="Assest/Image/utomhus/bg2.svg" alt="" class="modal-trigger im2"
+                        data-src="Assest/Image/utomhus/bg2.svg"
+                        data-caption1="Utomhus Antihalk Klinker Devon Pearl Betong 61×61 20mm"
+                        data-caption2="Utomhus 20mm Antihalk Clays Jordfärg 75.5×75.5"
+                        data-caption3="Utomhus Antihalk Klinker Devon Pearl Betong 61×61 20mm" onclick=" modalimg()">
+                    <div class="utomhus_round"><i class="fa-regular fa-heart" id="heart5"></i></div>
+                </div>
+                <div class="col-4 d-flex align-items-center justify-content-center utomhus_img ">
+                    <img src="Assest/Image/utomhus/bg3.svg" alt="" class="modal-trigger im3"
+                        data-src="Assest/Image/utomhus/bg3.svg"
+                        data-caption1="Utomhus Antihalk Klinker Devon Pearl Betong 61×61 20mm"
+                        data-caption2="Utomhus 20mm Antihalk Klinker Capert Sand 50x100cm" onclick=" modalimg()">
+                    <div class="utomhus_round"><i class="fa-regular fa-heart" id="heart5"></i></div>
+                </div>
+                <div class="col-4 d-flex align-items-center justify-content-center utomhus_img ">
+                    <img src="Assest/Image/utomhus/bg1.svg" alt="" class="modal-trigger im1"
+                        data-src="Assest/Image/utomhus/bg1.svg"
+                        data-caption1="Utomhus Antihalk Klinker Devon Pearl Betong 61×61 20mm"
+                        data-caption2="Utomhus 20mm Antihalk Klinker Capert Sand 50x100cm" onclick=" modalimg()"
+                        style="height: 100%;">
+                    <div class="utomhus_round"><i class="fa-regular fa-heart" id="heart5"></i></div>
+
+                </div>
+                <div class="col-4 d-flex align-items-center justify-content-center utomhus_img ">
+                    <img src="Assest/Image/utomhus/bg2.svg" alt="" class="modal-trigger im2"
+                        data-src="Assest/Image/utomhus/bg2.svg"
+                        data-caption1="Utomhus Antihalk Klinker Devon Pearl Betong 61×61 20mm"
+                        data-caption2="Utomhus 20mm Antihalk Clays Jordfärg 75.5×75.5"
+                        data-caption3="Utomhus Antihalk Klinker Devon Pearl Betong 61×61 20mm" onclick=" modalimg()">
+                    <div class="utomhus_round"><i class="fa-regular fa-heart" id="heart5"></i></div>
+                </div>
+                <div class="col-4 d-flex align-items-center justify-content-center utomhus_img ">
+                    <img src="Assest/Image/utomhus/bg3.svg" alt="" class="modal-trigger im3"
+                        data-src="Assest/Image/utomhus/bg3.svg"
+                        data-caption1="Utomhus Antihalk Klinker Devon Pearl Betong 61×61 20mm"
+                        data-caption2="Utomhus 20mm Antihalk Klinker Capert Sand 50x100cm" onclick=" modalimg()">
+                    <div class="utomhus_round"><i class="fa-regular fa-heart" id="heart5"></i></div>
+                </div>
+                <div class="col-4 d-flex align-items-center justify-content-center utomhus_img ">
+                    <img src="Assest/Image/utomhus/bg1.svg" alt="" class="modal-trigger im1"
+                        data-src="Assest/Image/utomhus/bg1.svg"
+                        data-caption1="Utomhus Antihalk Klinker Devon Pearl Betong 61×61 20mm"
+                        data-caption2="Utomhus 20mm Antihalk Klinker Capert Sand 50x100cm" onclick=" modalimg()"
+                        style="height: 100%;">
+                    <div class="utomhus_round"><i class="fa-regular fa-heart" id="heart5"></i></div>
+
+                </div>
+                <div class="col-4 d-flex align-items-center justify-content-center utomhus_img ">
+                    <img src="Assest/Image/utomhus/bg2.svg" alt="" class="modal-trigger im2"
+                        data-src="Assest/Image/utomhus/bg2.svg"
+                        data-caption1="Utomhus Antihalk Klinker Devon Pearl Betong 61×61 20mm"
+                        data-caption2="Utomhus 20mm Antihalk Clays Jordfärg 75.5×75.5"
+                        data-caption3="Utomhus Antihalk Klinker Devon Pearl Betong 61×61 20mm" onclick=" modalimg()">
+                    <div class="utomhus_round"><i class="fa-regular fa-heart" id="heart5"></i></div>
+                </div>
+                <div class="col-4 d-flex align-items-center justify-content-center utomhus_img ">
+                    <img src="Assest/Image/utomhus/bg3.svg" alt="" class="modal-trigger im3"
+                        data-src="Assest/Image/utomhus/bg3.svg"
+                        data-caption1="Utomhus Antihalk Klinker Devon Pearl Betong 61×61 20mm"
+                        data-caption2="Utomhus 20mm Antihalk Klinker Capert Sand 50x100cm" onclick=" modalimg()">
+                    <div class="utomhus_round"><i class="fa-regular fa-heart" id="heart5"></i></div>
+                </div>
+                <div class="col-4 d-flex align-items-center justify-content-center utomhus_img ">
+                    <img src="Assest/Image/utomhus/bg1.svg" alt="" class="modal-trigger im1"
+                        data-src="Assest/Image/utomhus/bg1.svg"
+                        data-caption1="Utomhus Antihalk Klinker Devon Pearl Betong 61×61 20mm"
+                        data-caption2="Utomhus 20mm Antihalk Klinker Capert Sand 50x100cm" onclick=" modalimg()"
+                        style="height: 100%;">
+                    <div class="utomhus_round"><i class="fa-regular fa-heart" id="heart5"></i></div>
+
+                </div>
+                <div class="col-4 d-flex align-items-center justify-content-center utomhus_img ">
+                    <img src="Assest/Image/utomhus/bg2.svg" alt="" class="modal-trigger im2"
+                        data-src="Assest/Image/utomhus/bg2.svg"
+                        data-caption1="Utomhus Antihalk Klinker Devon Pearl Betong 61×61 20mm"
+                        data-caption2="Utomhus 20mm Antihalk Clays Jordfärg 75.5×75.5"
+                        data-caption3="Utomhus Antihalk Klinker Devon Pearl Betong 61×61 20mm" onclick=" modalimg()">
+                    <div class="utomhus_round"><i class="fa-regular fa-heart" id="heart5"></i></div>
+                </div>
+                <div class="col-4 d-flex align-items-center justify-content-center utomhus_img ">
+                    <img src="Assest/Image/utomhus/bg3.svg" alt="" class="modal-trigger im3"
+                        data-src="Assest/Image/utomhus/bg3.svg"
+                        data-caption1="Utomhus Antihalk Klinker Devon Pearl Betong 61×61 20mm"
+                        data-caption2="Utomhus 20mm Antihalk Klinker Capert Sand 50x100cm" onclick=" modalimg()">
+                    <div class="utomhus_round"><i class="fa-regular fa-heart" id="heart5"></i></div>
+                </div>
+
+            </div>
+
+            <div id="imageModal" class="modal">
+                <div class="modal-width">
+
+                    <img class="modal-content" id="modalImage">
+
+                    <div id="captionContainer" class="caption-container">
+                        <div id="caption1" class="image-caption" onclick="togglePopup()"></div>
+                        <div id="caption2" class="image-caption"></div>
+                        <div id="caption3" class="image-caption"></div>
+                    </div>
+                    <div class="productinfo_popup" id="productInfoPopup">
+                        <div class="row productinfo_popup-list ">
+                            <div class="col-5 productinfo_popup_left">
+                                <img src="Assest/Image/utomhus/product1.svg" alt="">
+                                <div class="icongrp">
+                                    <img src="Assest/Image/utomhus/Frame1.svg" alt="">
+                                    <img src="Assest/Image/utomhus/Frame2.svg" alt="">
+                                    <img src="Assest/Image/utomhus/Frame3.svg" alt="">
+                                    <img src="Assest/Image/utomhus/Frame4.svg" alt="">
+                                    <img src="Assest/Image/utomhus/Frame5.svg" alt="">
+                                    <img src="Assest/Image/utomhus/Frame6.svg" alt="">
+                                    <img src="Assest/Image/utomhus/Frame1.svg" alt="">
+                                    <img src="Assest/Image/utomhus/Frame2.svg" alt="">
+                                    <img src="Assest/Image/utomhus/Frame3.svg" alt="">
+                                    <img src="Assest/Image/utomhus/Frame4.svg" alt="">
+                                    <img src="Assest/Image/utomhus/Frame5.svg" alt="">
+                                    <img src="Assest/Image/utomhus/Frame6.svg" alt="">
+                                </div>
+                                <div class="PAKET d-flex">
+                                    <p>PAKET:</p>
+                                    <div class="plus_minusgrp">
+                                        <div class="quantity-field">
+                                            <div class="btn-minus"><img src="Assest/Image/utomhus/minus.svg" alt="">
+                                            </div>
+                                            <input type="text" class="quantity-input" value="1">
+                                            <div class="btn-plus" id="btn-plus"><img src="Assest/Image/utomhus/plus.svg"
+                                                    alt=""></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="spillgrp d-flex">
+                                    <div class="rightim"><img src="Assest/Image/utomhus/right.svg" alt=""></div>
+                                    <p>+ 10% spill</p>
+                                    <img src="Assest/Image/utomhus/question.svg" class="questionmark" alt="">
+                                </div>
+                                <div class="priceinfogrp">
+                                    <div class="priceinfogrp_1">
+                                        <p>pris:</p>
+                                        <h6>11999.00 kr</h6>
+                                    </div>
+                                    <div class="priceinfogrp_1">
+                                        <p>total yta:</p>
+                                        <h6>3,68 m2</h6>
+                                    </div>
+                                    <hr>
+                                    </hr>
+                                    <div class="priceinfogrp_1">
+                                        <p>totalbelopp:</p>
+                                        <h6>11999.00 kr</h6>
+                                    </div>
+                                    <div>
+                                        <h4>Inkl. moms</h4>
+                                        <h4>Du sparar just nu 14 kr</h4>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="cart_btn d-flex justify-content-center">
+                                        <button class="info_btn">
+                                            <span>kolla upp</span>
+                                            <img src="Assest/Image/utomhus/Arrow 1.svg" alt="">
+                                        </button>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-7 productinfo_popup_right">
+                                <p class="head_p">Utomhus Antihalk Klinker Devon Pearl Betong 61×61 20mm
+                                </p>
+                                <div class="price">
+                                    <h6>13000.00 kr</h6>
+                                    <h4>11999.00 kr</h4>
+                                </div>
+                                <div class="categaory">
+                                    <div class="categaory1 d-flex">
+                                        <h4>Artikelnr:</h4>
+                                        <h4>KLS-10874</h4>
+                                    </div>
+                                    <div class="categaory2 d-flex">
+                                        <h4>Kategori:</h4>
+                                        <h4>Marmor</h4>
+                                    </div>
+                                    <div class="dropgrp d-flex">
+                                        <div class="dropdown drop1">
+                                            <button class="dropdown-btn" id="dropdownBtn"
+                                                onclick="popupinfo('dropdown-content1')">
+                                                <span>BESKRIVNING</span>
+                                                <i class=" fa-solid fa-chevron-down">
+                                                </i></button>
+                                            <div class="dropdown-content1">
+                                                <a href="#">
+                                                    <div class="drop2_list">
+                                                        <h6 style="font-weight: bold;">Kakel Marquina Vit Marmor</h6>
+                                                        <p>Inspirerat av marmors utseende och stil, återspeglar de
+                                                            keramisk kakel och klinkers dess elegans och ljusstyrka.</p>
+                                                        <p> De återskapar detta naturliga material i alla rum, vare sig
+                                                            det är badrum, kök, sovrum.</p>
+                                                        <p>Kakel Marquina brukas på väggar inomhus.</p>
+                                                        <p>Finns i olika färger och finns 2 storlekar.</p>
+                                                        <p>Priset är per kvadratmeter, men produkten säljs endast i
+                                                            hela paket.</p>
+                                                        <h6 style="font-weight: bold;">Marmor</h6>
+                                                        <p> Marmorutseende är väldigt elegant och ger en lyxig känsla
+                                                            till hemmet, men att underhålla en äkta marmorplatta kan
+                                                            vara
+                                                            svårt med tiden.</p>
+                                                        <a href="" style="color:#24638E;">Continue reading</a>
+                                                    </div>
+                                                </a>
+
+                                                <!-- Add more details as needed -->
+                                            </div>
+                                        </div>
+                                        <div class="dropdown drop2">
+                                            <button class="dropdown-btn" id="dropdownBtn"
+                                                onclick="popupinfo('dropdown-content2')">
+                                                <span>YTTERLIGARE INFORMATION</span>
+                                                <i class=" fa-solid fa-chevron-down">
+                                                </i>
+                                            </button>
+                                            <div class="dropdown-content2">
+                                                <div class="drop2_list justify-content-center">
+                                                    <a href="#" class="d-flex justify-content-between">
+                                                        <h4>Användningsområde</h4>
+                                                        <p>Inomhus</p>
+                                                    </a>
+                                                    <a href="#" class="d-flex justify-content-between">
+                                                        <h4>Placering</h4>
+                                                        <p>Vägg</p>
+                                                    </a>
+                                                    <a href="#" class="d-flex justify-content-between">
+                                                        <h4>Frostsäker</h4>
+                                                        <p>Nej</p>
+                                                    </a>
+                                                    <a href="#" class="d-flex justify-content-between">
+                                                        <h4>Tål Golvvärme</h4>
+                                                        <p>Ja</p>
+                                                    </a>
+                                                    <a href="#" class="d-flex justify-content-between">
+                                                        <h4>Färg</h4>
+                                                        <p> Svart</p>
+                                                    </a>
+                                                    <a href="#" class="d-flex justify-content-between">
+                                                        <h4>Kant</h4>
+                                                        <p> Rund kant</p>
+                                                    </a>
+                                                    <a href="#" class="d-flex justify-content-between">
+                                                        <h4>Yta</h4>
+                                                        <p> Glansig</p>
+                                                    </a>
+                                                    <a href="#" class="d-flex justify-content-between">
+                                                        <h4>Rum</h4>
+                                                        <p> Badrum, Inomhus, Kök</p>
+                                                    </a>
+                                                    <a href="#" class="d-flex justify-content-between">
+                                                        <h4>Textur</h4>
+                                                        <p> Marmor</p>
+                                                    </a>
+                                                    <a href="#" class="d-flex justify-content-between">
+                                                        <h4>Typ</h4>
+                                                        <p> Kakelr</p>
+                                                    </a>
+                                                    <a href="#" class="d-flex justify-content-between">
+                                                        <h4>Material</h4>
+                                                        <p> Keramik Vit Pasta Kropp</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- footer section -->
+    <footer class="footer">
+        <div class="footer_part1">
+            <div class="conatiner">
+                <div class="row">
+                    <div class="col-6 footer_part1_left">
+                        <div class="footer_logo">
+                            <img src="Assest/Image/footer/logo.svg" alt="">
+                        </div>
+                        <div class="footer_text">
+                            <p> Vi använder cookies, för att öka användarvänligheten i enlighet med lagen om
+                                elektronisk
+                                kommunikation.</p>
+                            <p>Genom att fortsätta använda vår webplats förutsätter vi att du godkänner detta. Läs
+                                mer
+                                om integritetspolicy.</p>
+                        </div>
+                        <div class="footer_social_app">
+                            <img src="Assest/Image/footer/facebook.svg" alt="">
+                            <img src="Assest/Image/footer/insta.svg" alt="">
+                            <img src="Assest/Image/footer/pinterest.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-6 footer_part1_right d-flex justify-content-center align-items-center">
+                        <div class="KUNDSERVICE">
+                            <ul class="p-0">
+                                <li>KUNDSERVICE</li>
+                                <li>Villkor & Frakt</li>
+                                <li>Försändelse Spårning</li>
+                                <li>Vanliga Frågor</li>
+                                <li>Integritetspolicy</li>
+                            </ul>
+                        </div>
+                        <div class="INFORMATION">
+                            <ul>
+                                <li>INFORMATION</li>
+                                <li>Om Oss</li>
+                                <li>Kontakta Oss</li>
+                                <li>Inspirations</li>
+                                <li>Varför välja Granitkeramik?</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer_part2">
+            <div class="conatiner">
+                <div class="row footer_part2_list">
+                    <div class="col-3 footer_part2_list1">
+                        <p class="p-0 m-0">2021 All rights reserved to Kakel store ab</p>
+                    </div>
+                    <div class="col-5 footer_part2_list2">
+                        <img src="Assest/Image/footer/Vector.svg" alt="">
+                        <img src="Assest/Image/footer/image 15.svg" alt="">
+                        <img src="Assest/Image/footer/Vector (2).svg" alt="">
+                        <img src="Assest/Image/footer/image 14.svg" alt="">
+                        <img src="Assest/Image/footer/image 18.svg" alt="">
+                    </div>
+                    <div class="col-3 footer_part2_list3">
+                        <img src="Assest/Image/footer/Certificate.svg" alt="">
+                        <img src="Assest/Image/footer/Google.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- script Links -->
+    <script src="Assest/JS/script.js"></script>
+    <script src="Assest/JS/bootstrap.min.js"></script>
+
+    <script>
+
+
+        $(".btn-plus").on("click", function () {
+            
+            var quantityInput = document.querySelector(".quantity-input");
+            var currentValue = parseInt(quantityInput.value);
+            console.log(currentValue);
+            quantityInput.value = (currentValue + 1).toString();
+        });
+        $(".btn-minus").on("click", function () {
+            
+            var quantityInput = document.querySelector(".quantity-input");
+            var currentValue = parseInt(quantityInput.value);
+            console.log(currentValue);
+            quantityInput.value = (currentValue - 1).toString();
+        });
+    </script>
+
+</body>
+
+</html>
